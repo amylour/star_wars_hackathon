@@ -67,7 +67,11 @@ When you make a branch, there always exists two versions of it, one in your IDE 
 
 So when I made 'keiron', I now have the 'keiron' branch open in my IDE (Integrated development environment, which is a fancy way of saying "coding environment", i.e., VSCode, Gitpod, CodeAnywhere etc.), where I am modifying the code. And then I push these changes to the 'keiron' branch in GitHub (**the remote branch**), where I can then merge that branch with the main remote branch. 
 
-This is noteworthy because after every successfully merged Pull Request, you must always `git pull origin main` and `git pull origin your branch name`, to make so the remote version of your branch is also up to date with your coding environment (IDE). When you make this second command, go to the Source Control, and click `Sync Changes` if it is available. This will then sync your remote branch with your IDE branch. If these branches aren't up to date, we could experience what's called a merge conflict, which I will explain below in the _potential problems_ section.
+This is noteworthy because after every successfully merged Pull Request, you must always `git pull origin main` to make sure that the remote version of your branch is also up to date with your coding environment (IDE). When you enter this command, go to the Source Control, and click `Sync Changes` if it is available (see photo for reference). 
+
+![sync-changes](/documentation/sync%20changes.png)
+
+This will then sync your remote branch with your IDE branch. If these branches aren't up to date, we could experience what's called a merge conflict, which I will explain below in the _potential problems_ section.
 
 
 **Potential problems**
