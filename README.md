@@ -50,7 +50,7 @@ A list of useful commands when you're working from branches are:
 
 ## **Creating a Pull Request (known as a "PR")**
 
-When you've pushed changes to your branch, you can then head over to the GitHub repository for Women-In-Tech-Hackathon and _normally_ there appears an unmissable message saying that you can `merge changes` and begin a `pull request`.
+When you've pushed changes to your branch, you can then head over to the GitHub repository for Star Wars Hackathon and _normally_ there appears an unmissable message saying that you can `merge changes` and begin a `pull request`.
 
 In case you've pushed changes and this message doesn't appear, don't worry, just go back into "branches", find your name, and alongside your branch name, there'll be a button for "New Pull Request". I've attached the following photo for reference.
 
