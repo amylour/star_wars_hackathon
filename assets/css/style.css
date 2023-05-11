@@ -5,14 +5,17 @@ body {
   z-index: -1;
 }
 
-#title-head {
-  position: relative;
+.title-container {
   display: flex;
   justify-content: center;
-  color: yellow;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  font-size: 75px;
+  align-items: center;
+  height: 100%;
+  margin: 20px;
+}
+
+.title-container img {
+  max-width: 100%;
+  height: auto;
 }
 
 #game-container {
