@@ -1,10 +1,17 @@
+body {
+  background-image: url("../media/sw_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
 #game-container {
   position: relative;
   width: 800px;
   height: 400px;
   margin: 0 auto;
   overflow: hidden;
-  border: 1px solid #000;
+  border: 1px solid #c71616;
 }
 
 #game-canvas {
