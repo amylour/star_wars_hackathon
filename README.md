@@ -110,3 +110,21 @@ I've tried my best to be as comprehensive as possible in this so that any new-ha
                                 \ \  \
                                 \_\_|
     `
+
+## **Wireframes**
+Some basic wireframes were created so the team could be on the same page when creating the layout during coding sessions.
+
+### **Landing page - Landscape**
+![Base Page Landscape](documentation/base-screen.png)
+
+### **Landing page - Portrait**
+![Base Page Portrait](documentation/base-mobile.png)
+
+### **In Game Screen**
+![In Game](documentation/in-game.png)
+
+### **How To Play Screen**
+![How To Play](documentation/how-to-play.png)
+
+### **Game Over Screen**
+![Game Over](documentation/game-over.png)
