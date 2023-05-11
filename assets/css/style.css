@@ -19,3 +19,47 @@ body {
   top: 0;
   left: 0;
 }
+
+/* Footer Styling */
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+#footer-left {
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  bottom: 0;
+  left: 0;
+  border-top: 20px solid black;
+  border-bottom: 15px solid black;
+  margin: 0;
+  background-color: black;
+}
+
+#footer-right {
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  bottom: 0;
+  right: 0;
+  border-top: 20px solid black;
+  border-bottom: 15px solid black;
+  margin: 0;
+  background-color: black;
+}
+
+
+footer > ul > li {
+  list-style: none;
+  color: yellow;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+footer > ul > li >a {
+  text-decoration: none;
+  color: white;
+}
