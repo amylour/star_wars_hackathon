@@ -1,4 +1,39 @@
+# **Game name**
+
+![Responsiveness Photo]()
+
 ## **Introduction**
+
+# Table of Contents
+
+1. [Project Goals](#project-goals "ProjectGoals")
+   + [User Goals](#user-goals "User Goals")
+   + [Site Owner Goals](#site-owner-goals "Site Ower Goals")
+2. [User Experience](#user-experience "User Experience")
+   + [Target Audience](#target-audience "Target Audience")
+   + [User Requirements and Expectations](#user-requirements-and-expectations "User Requirements and Expections")
+   + [User Stories](#user-stories "User Stories")
+3. [Design](#design "Design") 
+   + [Design Choices](#design-choices "Design Choices")
+   + [Colour](#colour "Colour")
+   + [Fonts](#fonts "Fonts")
+4. [Technologies Used](#technologies-used "Technologies Used")
+   + [Languages](#languages "Languages")
+  
+5. [Features](#features "Features")
+   + [Existing Features](#existing-features "Existing Features")
+      + [Start Screen](#start-screen "Start Screen")
+      + [Game Screen](#quiz-screen "Game Screen")
+      + [Score Screen](#score-screen "Score Screen")
+   + [Future Features](#future-features "Future Features")
+
+6. [Testing](#testing "Testing")
+   + [Bugs](#bugs "Bugs")
+   + [Validator Testing](#validator-testing "Validator Testing") 
+8. [Deployment](#deployment "Deployment")
+9. [Credits](#credits "Credits")
+
+
 ## **Features**
 ## **Creating a Branch**
 
