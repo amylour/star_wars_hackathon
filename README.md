@@ -1,4 +1,35 @@
-## **Intorduction**
+# **Game name**
+
+![Responsiveness Photo]()
+
+## **Introduction**
+
+# Table of Contents
+
+1. [Project Goals](#project-goals "ProjectGoals")
+   + [User Goals](#user-goals "User Goals")
+   + [Site Owner Goals](#site-owner-goals "Site Ower Goals")
+2. [User Experience](#user-experience "User Experience")
+   + [Target Audience](#target-audience "Target Audience")
+   + [User Requirements and Expectations](#user-requirements-and-expectations "User Requirements and Expections")
+   + [User Stories](#user-stories "User Stories")
+3. [Design](#design "Design") 
+   + [Design Choices](#design-choices "Design Choices")
+   + [Colour](#colour "Colour")
+   + [Fonts](#fonts "Fonts")
+4. [Technologies Used](#technologies-used "Technologies Used")
+   + [Languages](#languages "Languages")
+5. [Features](#features "Features")
+   + [Existing Features](#existing-features "Existing Features")
+      + [Start Screen](#start-screen "Start Screen")
+      + [Game Screen](#quiz-screen "Game Screen")
+      + [Score Screen](#score-screen "Score Screen")
+   + [Future Features](#future-features "Future Features")
+6. [Testing](#testing "Testing")
+   + [Bugs](#bugs "Bugs")
+   + [Validator Testing](#validator-testing "Validator Testing") 
+8. [Deployment](#deployment "Deployment")
+9. [Credits](#credits "Credits")
 
 ### **User Stories**
 
@@ -10,9 +41,8 @@
 6. As a developer I want the game to be responsive and smooth to users interaction on multiple devices (mobile and desktop).
 7. As a developer, I want to ensure that the game's graphics and sound effects are immersive and engaging, so that players fully immerse themselves in the Star Wars universe and enjoy an entertaining and memorable experience.
 
-
-
 ## **Features**
+
 ## **Creating a Branch**
 
 There are multiple ways to create a branch in your IDE (Integrated development environment), but this is one of the easiest:
