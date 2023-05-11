@@ -1,4 +1,4 @@
-## **Intorduction**
+## **Introduction**
 ## **Features**
 ## **Creating a Branch**
 
