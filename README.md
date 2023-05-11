@@ -1,3 +1,5 @@
+## **Intorduction**
+## **Features**
 ## **Creating a Branch**
 
 There are multiple ways to create a branch in your IDE (Integrated development environment), but this is one of the easiest:
