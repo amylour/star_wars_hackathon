@@ -1,0 +1,14 @@
+#game-container {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid #000;
+}
+
+#game-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
