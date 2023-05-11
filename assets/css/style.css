@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400;600&display=swap');
+
 body {
   background-image: url("../media/sw_bg_big.png");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
+  font-family: 'Noto Sans Display', sans-serif;
 }
 
 .title-container {
@@ -31,6 +34,50 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+/* Timer */
+
+.timer {
+  position: absolute;
+  top: 100px;
+  right: 300px;
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #666666;
+  border-radius: 20px;
+  background-image: linear-gradient(to bottom, #bbbbbb, #636363);
+}
+
+.start-button {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #666666;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Noto Sans Display', sans-serif;
+  text-shadow: 1px 1px 2px #f2f2f2;
+  background-image: linear-gradient(to bottom, #bbbbbb, #636363);
+}
+
+.start-button:hover {
+  background-image: linear-gradient(to bottom, #fcfcfc, #6a6a6a);
+}
+
+.start-button:active {
+  background-image: linear-gradient(to bottom, #b3b3b3, #5e5e5e);
+}
+
+.digits {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Noto Sans Display', sans-serif;
+  text-shadow: 1px 1px 2px #f2f2f2;
 }
 
 /* Footer Styling */
