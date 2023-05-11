@@ -5,6 +5,16 @@ body {
   z-index: -1;
 }
 
+#title-head {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  color: yellow;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 75px;
+}
+
 #game-container {
   position: relative;
   width: 800px;
