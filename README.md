@@ -19,22 +19,30 @@
    + [Fonts](#fonts "Fonts")
 4. [Technologies Used](#technologies-used "Technologies Used")
    + [Languages](#languages "Languages")
-  
 5. [Features](#features "Features")
    + [Existing Features](#existing-features "Existing Features")
       + [Start Screen](#start-screen "Start Screen")
       + [Game Screen](#quiz-screen "Game Screen")
       + [Score Screen](#score-screen "Score Screen")
    + [Future Features](#future-features "Future Features")
-
 6. [Testing](#testing "Testing")
    + [Bugs](#bugs "Bugs")
    + [Validator Testing](#validator-testing "Validator Testing") 
 8. [Deployment](#deployment "Deployment")
 9. [Credits](#credits "Credits")
 
+### **User Stories**
+
+1. As a user, when I navigate to the *“INSERT GAME NAME”*  website, I want to see a landing page that features memorable Star Wars references and sound so that I immediately feel immersed in the Star Wars universe. This will continue throughout all interactions with the website and game play. The loading page will be designed to load quickly and smoothly and will include interactive elements so that I can see the website is working to prepare the game for me to enjoy.
+2. Once the game has loaded, as a user, I want to see that the loading page smoothly transitions into the main menu of the game. When I click the start button, I want to be taken to a screen where I can customise my lightsaber. Clicking start, will initiate the game play with my personalised character.
+3. As a user, I want to be able to control my character’s movement, using the *“arrow keys”* and actions using the *“space-bar”*. I want to progress through the game accumulating the highest score possible with increasing difficulty so that I feel challenged and engaged.
+4. During the game play, as a user, I want to have a set number of lives depicted by *“Yoda icons”*, which depreciate each time I make a mistake. I want to also have opportunities to gain rewards during the game play, such as an extra life or bonus points for difficult to complete challenges.
+5. As a user I want the game play to have a high level of replayability so that I can continue the play multiple times. This can be achieved by adding in multiplayer functionalities, such as competing for high scores with an interactive leaderboard or engaging in a local connection (“battle off”).
+6. As a developer I want the game to be responsive and smooth to users interaction on multiple devices (mobile and desktop).
+7. As a developer, I want to ensure that the game's graphics and sound effects are immersive and engaging, so that players fully immerse themselves in the Star Wars universe and enjoy an entertaining and memorable experience.
 
 ## **Features**
+
 ## **Creating a Branch**
 
 There are multiple ways to create a branch in your IDE (Integrated development environment), but this is one of the easiest:
