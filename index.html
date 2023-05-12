@@ -27,15 +27,25 @@
     <img src="assets/media/sw_title.png" alt="Saber Scroll" height="220px" width="440px">
     </div>
 
+    <!-- Message box that displays telling user to use a desktop browser if needed. -->
+
+    <div id="if-not-desktop">
+      <p>Make sure you have a keyboard plugged in!</p>
+      <p>Press 'K' to dismiss this message.</p>
+    </div>
+
     <!-- Game Canvas -->
     
     <div class="timer">
       <span class="digits" id="time-taken">00:00</span>
     </div>
     
-    <div class="start-button" id="start-button">Start</div>
     <div id="game-container">
       <canvas id="game-canvas"></canvas>
+    </div>
+
+    <div id="start-button-container">
+      <p class="start-button" id="start-button">Start</p>
     </div>
 
 
