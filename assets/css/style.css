@@ -2,8 +2,7 @@
 
 body {
   background-image: url("../media/sw_bg_big.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   z-index: -1;
   font-family: 'Noto Sans Display', sans-serif;
   overflow: hidden;
@@ -53,12 +52,6 @@ body {
   margin: 0 auto;
 }
 
-
-
-/*hidden by default*/
-#win-modal {
-  display: none;
-}
 
 #game-container {
   position: relative;
