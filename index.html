@@ -15,16 +15,40 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- Navbar -->
+    <!-- Navbar if needed
     <nav class="navbar bg-body-tertiary mb-5">
       <div class="container-fluid">
         <span class="navbar-brand mb-0 h1">Navbar</span>
       </div>
-    </nav>
+    </nav>  -->
+
+    <!-- Main Header/Title -->
+    <div class="title-container">
+    <img src="assets/media/sw_title.png" alt="Saber Scroll" height="220px" width="440px">
+    </div>
 
     <!-- Game Canvas -->
+    
+    <div class="timer">
+      <span class="digits" id="time-taken">00:00</span>
+    </div>
+    
+    <div class="start-button" id="start-button">Start</div>
     <div id="game-container">
       <canvas id="game-canvas"></canvas>
+    </div>
+
+
+      <!-- Modal: Onload - rules and user name modal to start the game: adapted from https://www.w3schools.com/howto/howto_css_modals.asp -->
+    <div id="start-modal" class="start-view">
+        <div class="start-screen">
+          <img src="assets/media/sw_title.png" alt="Saber Scroll" height="180px" width="400px">
+          <p>Welcome to Saber Scroll!<br>
+            Rules, rules, these are the rules<br>
+            More rules for having fun<br>
+            even more rules when we have them</p>
+          <button type="submit" id="close-button" class="tick-button">Play</button>
+        </div>
     </div>
 
     <!-- Footer -->

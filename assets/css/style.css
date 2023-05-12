@@ -1,9 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400;600&display=swap');
+
 body {
   background-image: url("../media/sw_bg_big.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   z-index: -1;
+  font-family: 'Noto Sans Display', sans-serif;
+  overflow: hidden;
 }
+
+/* Title styling */
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 20px;
+}
+
+.title-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Start modal */
+
+.start-view {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+}
+
+.start-screen {
+  background-image: linear-gradient(#bbbbbb, #636363);
+  box-shadow: 1px 0px 0px #976f00, 0px 1px 0px #976f00,
+      2px 1px 0px #976f00, 1px 2px 0px #976f00,
+      3px 2px 0px #976f00, 2px 3px 0px #976f00,
+      4px 3px 0px #705200, 3px 4px 0px #705200,
+      5px 4px 0px #705200, 4px 5px 0px #705200,
+      6px 5px 0px #755600, 5px 6px 0px #755600,
+      7px 6px 0px #755600, 6px 7px 0px #755600;
+  border-radius: 50px;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  height: 450px;
+  width: 700px;
+  margin: 0 auto;
+}
+
 
 #game-container {
   position: relative;
@@ -18,6 +66,50 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+/* Timer */
+
+.timer {
+  position: absolute;
+  top: 100px;
+  right: 300px;
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #666666;
+  border-radius: 20px;
+  background-image: linear-gradient(to bottom, #bbbbbb, #636363);
+}
+
+.start-button {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #666666;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Noto Sans Display', sans-serif;
+  text-shadow: 1px 1px 2px #f2f2f2;
+  background-image: linear-gradient(to bottom, #bbbbbb, #636363);
+}
+
+.start-button:hover {
+  background-image: linear-gradient(to bottom, #fcfcfc, #6a6a6a);
+}
+
+.start-button:active {
+  background-image: linear-gradient(to bottom, #b3b3b3, #5e5e5e);
+}
+
+.digits {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Noto Sans Display', sans-serif;
+  text-shadow: 1px 1px 2px #f2f2f2;
 }
 
 /* Footer Styling */
