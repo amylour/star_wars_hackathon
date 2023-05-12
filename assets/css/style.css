@@ -59,7 +59,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
-  margin: 20px;
+  margin: 30px;
 }
 
 .title-container img {
@@ -81,13 +81,14 @@ body {
 
 .start-screen {
   background-image: linear-gradient(#bbbbbb, #636363);
-  box-shadow: 1px 0px 0px #976f00, 0px 1px 0px #976f00,
-      2px 1px 0px #976f00, 1px 2px 0px #976f00,
+  box-shadow: 1px 0px 0px #e7b43c, 0px 1px 0px #e7b43c,
+      2px 1px 0px #e7b43c, 1px 2px 0px #e7b43c,
       3px 2px 0px #976f00, 2px 3px 0px #976f00,
       4px 3px 0px #705200, 3px 4px 0px #705200,
       5px 4px 0px #705200, 4px 5px 0px #705200,
       6px 5px 0px #755600, 5px 6px 0px #755600,
-      7px 6px 0px #755600, 6px 7px 0px #755600;
+      7px 6px 0px #755600, 6px 7px 0px #755600,
+      8px 7px 0px #463301, 7px 8px 0px #463301;
   border-radius: 50px;
   padding: 20px;
   font-size: 18px;
@@ -98,14 +99,27 @@ body {
   margin: 0 auto;
 }
 
-
 #game-container {
   position: relative;
   width: 800px;
   height: 400px;
   margin: 0 auto;
   overflow: hidden;
-  border: 1px solid #c71616;
+  border-style: solid;
+  border-width: 10px;
+  border-image: linear-gradient(to bottom, #fcd477, #976f00) 30 30;
+  background-image: url("../media/game_bg.png");
+  background-size: cover;
+}
+
+#game-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.3); /* set semi-transparent black color */
 }
 
 #game-canvas {
@@ -121,10 +135,10 @@ body {
   top: 100px;
   right: 300px;
   display: inline-block;
-  padding: 5px 10px;
+  padding: 10px 15px;
   background-color: #666666;
   border-radius: 20px;
-  background-image: linear-gradient(to bottom, #bbbbbb, #636363);
+  background-image: linear-gradient(to bottom, #ddb548, #755600);
 }
 
 .start-button {
@@ -134,7 +148,8 @@ body {
   width: 10%;
   margin-left: 45%;
   margin-right: 45%;
-  margin-top: 25px;
+  margin-top: 50px;
+  padding: 5px 10px;
   background-color: #666666;
   border-radius: 20px;
   cursor: pointer;
@@ -142,7 +157,7 @@ body {
   font-weight: bold;
   font-family: 'Noto Sans Display', sans-serif;
   text-shadow: 1px 1px 2px #f2f2f2;
-  background-image: linear-gradient(to bottom, #bbbbbb, #636363);
+  background-image: linear-gradient(to bottom, #ddb548, #755600);
 }
 
 #start-button-container {
@@ -150,11 +165,11 @@ body {
 }
 
 .start-button:hover {
-  background-image: linear-gradient(to bottom, #fcfcfc, #6a6a6a);
+  background-image: linear-gradient(to bottom, #fff2b9, #bfa300);
 }
 
 .start-button:active {
-  background-image: linear-gradient(to bottom, #b3b3b3, #5e5e5e);
+  background-image: linear-gradient(to bottom, #e6b800, #8c6e00);
 }
 
 .digits {
