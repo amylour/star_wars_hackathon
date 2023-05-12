@@ -22,6 +22,11 @@
   #start-button-container {
     opacity: 0;
   }
+
+  #start-modal {
+    position: relative;
+    top: -350px;
+  }
 }
 
 /* Hide message if on desktop browser */
