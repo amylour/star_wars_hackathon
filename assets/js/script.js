@@ -49,6 +49,23 @@ function showTime() {
 
 startButton.addEventListener("click", timer);
 
+// User pressing 'K' key to dismiss message //
+
+document.body.addEventListener("keydown", dismissMessage);
+
+function dismissMessage(event) {
+  if (event.keyCode === 75) {
+    message = document.getElementById("if-not-desktop")
+
+    document.getElementById("game-container").style.opacity = ("100")
+    document.getElementById("start-button-container").style.opacity = ("100")
+
+    message.style.width = "0"
+    message.style.height = "0"
+    message.style.opacity = "0"
+  }
+}
+
 // Game functionality //
 
 const canvas = document.getElementById("game-canvas");
