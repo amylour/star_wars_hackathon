@@ -85,16 +85,16 @@ let rightPressed = false;
 
 
   const playerImage = new Image();
-  playerImage.src = 'assets/images/bluels.png';
+  playerImage.src = 'assets/media/bluels.png';
 
   const darthImage = new Image();
-  darthImage.src = 'assets/images/vader_helmet.png';
+  darthImage.src = 'assets/media/vader_helmet.png';
 
   const ctImage = new Image();
-  ctImage.src = 'assets/images/clone_trooper.png';
+  ctImage.src = 'assets/media/clone_trooper.png';
 
   const bfImage = new Image();
-  bfImage.src = 'assets/images/bf_helmet.png';
+  bfImage.src = 'assets/media/bf_helmet.png';
   
   
 
