@@ -6,8 +6,10 @@ body {
   background-size: cover;
   z-index: -1;
   font-family: 'Noto Sans Display', sans-serif;
+  overflow: hidden;
 }
 
+/* Title styling */
 .title-container {
   display: flex;
   justify-content: center;
@@ -19,6 +21,43 @@ body {
 .title-container img {
   max-width: 100%;
   height: auto;
+}
+
+/* Start modal */
+
+.start-view {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+}
+
+.start-screen {
+  background-image: linear-gradient(#bbbbbb, #636363);
+  box-shadow: 1px 0px 0px #976f00, 0px 1px 0px #976f00,
+      2px 1px 0px #976f00, 1px 2px 0px #976f00,
+      3px 2px 0px #976f00, 2px 3px 0px #976f00,
+      4px 3px 0px #705200, 3px 4px 0px #705200,
+      5px 4px 0px #705200, 4px 5px 0px #705200,
+      6px 5px 0px #755600, 5px 6px 0px #755600,
+      7px 6px 0px #755600, 6px 7px 0px #755600;
+  border-radius: 50px;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  height: 450px;
+  width: 700px;
+  margin: 0 auto;
+}
+
+
+
+/*hidden by default*/
+#win-modal {
+  display: none;
 }
 
 #game-container {

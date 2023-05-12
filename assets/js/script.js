@@ -1,3 +1,16 @@
+// open rules and player name modal on window load
+window.addEventListener('load', function () {
+  this.setTimeout(function open(event) {
+    document.querySelector('#start-modal').style.display = "block";
+  }, 100);
+  
+  var closeButton = document.querySelector('#close-button');
+  closeButton.addEventListener('click', function(event) {
+    document.querySelector('#start-modal').style.display = "none";
+  });
+});
+
+
 // timer function - click 'Start' and timer starts
 
 let int = null;
