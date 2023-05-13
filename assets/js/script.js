@@ -57,15 +57,24 @@ document.body.addEventListener("keydown", dismissMessage);
 
 function dismissMessage(event) {
   if (event.keyCode === 75) {
-    message = document.getElementById("if-not-desktop")
+    message = document.getElementById("if-not-desktop");
 
-    document.getElementById("game-container").style.opacity = ("100")
-    document.getElementById("start-button-container").style.opacity = ("100")
+    document.getElementById("game-container").style.opacity = "100";
+    document.getElementById("start-button-container").style.opacity = "100";
 
-    message.style.width = "0"
-    message.style.height = "0"
-    message.style.opacity = "0"
+    message.style.width = "0";
+    message.style.height = "0";
+    message.style.opacity = "0";
   }
+}
+
+// Make start button and timer appear after play button is pressed on start modal //
+
+document.getElementById("close-button").addEventListener("click", playButton)
+
+function playButton(event) {
+  document.getElementById("timer").style.opacity = ("100")
+  document.getElementById("start-button").style.opacity = ("100")
 }
 
 // Game functionality //
@@ -119,6 +128,9 @@ bfImage.src = "assets/media/bf_helmet.png";
 
 const tieFighter = new Image();
 tieFighter.src = "assets/media/tief.png";
+
+const gameOverModal = document.getElementById("gameOverModal");
+const restartButton = document.getElementById("restartButton");
 
 function animate() {
   ctx.clearRect(0, 0, canvas_width, canvas_height);
@@ -266,7 +278,7 @@ function bfMove() {
   bfX += bfSpeedX;
 }
 
-function tfMove(){
+function tfMove() {
   if (tfX === 0 || tfX + 100 === 700) {
     tfSpeedX = -tfSpeedX;
   }
@@ -274,30 +286,36 @@ function tfMove(){
   tfX += tfSpeedX;
 }
 
-function vaderCollision (){
-  if (spriteX + 50 >= vaderX  &&
-      spriteY + 50 >= vaderY &&
-     spriteX <= vaderX + 50 &&
-     spriteY <= vaderY + 50){
-       vaderX = 0;
+function vaderCollision() {
+  if (
+    spriteX + 50 >= vaderX &&
+    spriteY + 50 >= vaderY &&
+    spriteX <= vaderX + 50 &&
+    spriteY <= vaderY + 50
+  ) {
+    vaderX = 0;
   }
 }
 
-function ctCollision (){
-  if (spriteX + 50 >= ctX  &&
-      spriteY + 50 >= ctY &&
-     spriteX <= ctX + 50 &&
-     spriteY <= ctY + 50){
-       ctX = 0;
+function ctCollision() {
+  if (
+    spriteX + 50 >= ctX &&
+    spriteY + 50 >= ctY &&
+    spriteX <= ctX + 50 &&
+    spriteY <= ctY + 50
+  ) {
+    ctX = 0;
   }
 }
 
-function bfCollision (){
-  if (spriteX + 50 >= bfX  &&
-      spriteY + 50 >= bfY &&
-     spriteX <= bfX + 50 &&
-     spriteY <= bfY + 50){
-       bfX = 0;
+function bfCollision() {
+  if (
+    spriteX + 50 >= bfX &&
+    spriteY + 50 >= bfY &&
+    spriteX <= bfX + 50 &&
+    spriteY <= bfY + 50
+  ) {
+    bfX = 0;
   }
 }
 
@@ -386,8 +404,20 @@ function updateLives() {
 }
 
 function gameOver() {
-  // Logic could really be anything... a modal with GAME OVER? or YOU HAVE LOST?
-  // Or something more Star Wars related?
+  // Alert/Modal = Game Over
+  gameOverModal.style.display = 'block';
+  // Button - Retry = Start
+  restartButton.addEventListener('click', restartGame);
+}
+
+function restartGame() {
+  // Variables need to be reset(?)
+
+  // This hides the gameOver() modal
+  modal.style.display = 'none';
+
+  // Start the game again - not sure how to target this at the moment
+  // Perhaps animate() needs to be called again?
 }
 
 animate();
