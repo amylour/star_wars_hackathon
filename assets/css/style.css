@@ -171,14 +171,14 @@ body {
 
 .lives {
   position: absolute;
-  top: 200px;
-  right: 270px;
+  top: 100px;
+  right: 230px;
   padding: 10px 15px;
   border-radius: 20px;
 }
 
 .life-icon {
-  width: 42px;
+  width: 60px;
   height: 42px;
   background-image: url('/assets/media/grougu_lives_2_55x40.png');
   background-size: cover;
@@ -218,7 +218,7 @@ body {
 
 .timer {
   position: absolute;
-  top: 100px;
+  top: 400px;
   right: 300px;
   display: inline-block;
   padding: 10px 15px;
