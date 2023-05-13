@@ -566,6 +566,16 @@ function restartGame() {
   // Perhaps animate() needs to be called again?
 }
 
+// Sound toggle functionality. //
+
+document.getElementById("sound-slider").addEventListener("click", toggleMusic);
+
+function toggleMusic(event) {
+  let saberSong = document.getElementById("music-player");
+  // execute song pause/play for mute button
+  return daySong.paused ? daySong.play() : daySong.pause();
+}
+
 // Have the start button call the animate() function to start the game //
 
-document.getElementById("start-button").addEventListener("click", animate)
+document.getElementById("start-button").addEventListener("click", animate);
