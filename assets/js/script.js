@@ -164,6 +164,7 @@ function animate(event) {
   ctCollision();
   bfCollision();
   tfCollision();
+  vaderCtCollision();
   requestAnimationFrame(animate);
 }
 
@@ -341,6 +342,17 @@ function tfCollision (){
   }
 }
 
+function vaderCtCollision(){
+    if (
+      vaderX + 50 >= ctX &&
+      vaderY + 50 >= ctY &&
+      vaderX <= ctX + 50 &&
+      vaderY <= ctY + 50
+    ) {
+     vaderX = 0;
+     ctX = 400;
+    }
+}
 document.body.addEventListener("keydown", keyDown);
 document.body.addEventListener("keyup", keyUp);
 
