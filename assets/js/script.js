@@ -117,7 +117,7 @@ let downPressed = false;
 let leftPressed = false;
 let rightPressed = false;
 
-let score = 0;
+let points = 0;
 let lives = 3;
 
 
@@ -325,6 +325,8 @@ function ctCollision() {
     spriteY <= ctY + 50
   ) {
     ctX = 0;
+    points += 10;
+    updatePointsDisplay();
   }
 }
 
@@ -485,6 +487,10 @@ function keyUp(event) {
 // Branch "keiron" -- created score + lives variables with basic functions.
 // You don't have to use any of this code - just thought I'd write some to help out.
 
+function updatePointsDisplay() {
+  const pointsDisplay = document.getElementById("pointsCount");
+  pointsDisplay.textContent = points;
+}
 
 const lifeContainer = document.getElementById('lifeContainer');
 
