@@ -169,12 +169,20 @@ body {
   align-items: center;
 }
 
+.lives {
+  position: absolute;
+  top: 200px;
+  right: 270px;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
 .life-icon {
-  width: 30px;
-  height: 30px;
-  background-image: url('/assets/media/clone_trooper.png');
+  width: 42px;
+  height: 42px;
+  background-image: url('/assets/media/grougu_lives_2_55x40.png');
   background-size: cover;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 #game-container {
@@ -213,16 +221,6 @@ body {
   top: 100px;
   right: 300px;
   display: inline-block;
-  padding: 10px 15px;
-  background-color: #666666;
-  border-radius: 20px;
-  background-image: linear-gradient(to bottom, #ddb548, #755600);
-}
-
-.lives {
-  position: absolute;
-  top: 200px;
-  right: 290px;
   padding: 10px 15px;
   background-color: #666666;
   border-radius: 20px;
