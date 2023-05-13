@@ -103,14 +103,14 @@ let bfY = 125;
 let tfX = 0;
 let tfY = 285;
 let speed = 5;
-let vaderSpeedX = 4;
-let vaderSpeedY = 4;
-let ctSpeedX = 5;
-let ctSpeedY = 5;
-let bfSpeedX = 7;
-let bfSpeedY = 7;
-let tfSpeedX = 3;
-let tfSpeedY = 3;
+let vaderSpeedX = 1;
+let vaderSpeedY = 1;
+let ctSpeedX = 1;
+let ctSpeedY = 1;
+//let bfSpeedX = 1;
+//let bfSpeedY = 1;
+let tfSpeedX = 1;
+let tfSpeedY = 1;
 
 let upPressed = false;
 let downPressed = false;
@@ -131,8 +131,8 @@ darthImage.src = "assets/media/vader_helmet.png";
 const ctImage = new Image();
 ctImage.src = "assets/media/clone_trooper.png";
 
-const bfImage = new Image();
-bfImage.src = "assets/media/bf_helmet.png";
+/*const bfImage = new Image();
+bfImage.src = "assets/media/bf_helmet.png"; */ 
 
 const tieFighter = new Image();
 tieFighter.src = "assets/media/tief.png";
@@ -147,29 +147,29 @@ function animate(event) {
   ctx.drawImage(playerImage, spriteX, spriteY, 100, 13);
   ctx.drawImage(darthImage, vaderX, vaderY, vaderWidth, vaderHeight);
   ctx.drawImage(ctImage, ctX, ctY, 54, 50);
-  ctx.drawImage(bfImage, bfX, bfY, 54, 50);
+  //ctx.drawImage(bfImage, bfX, bfY, 54, 50);
   ctx.drawImage(tieFighter, tfX, tfY, 100, 100);
   gameFrame++;
   inputs();
   boundryCollision();
   vaderBoundryCol();
   ctBoundryCol();
-  bfBoundryCol();
+  //bfBoundryCol();
   tfBoundryCol();
   vaderMove();
   ctMove();
-  bfMove();
+  //bfMove();
   tfMove();
   vaderCollision();
   ctCollision();
-  bfCollision();
+  //bfCollision();
   tfCollision();
   vaderCtCollision();
-  vaderbfCollision();
-  ctbfCollision();
+  //vaderbfCollision();
+ // ctbfCollision();
   vaderTfCollision();
   ctTfCollision();
-  bfTfCollision();
+ // bfTfCollision();
   requestAnimationFrame(animate);
 }
 
@@ -226,7 +226,7 @@ function ctBoundryCol() {
   }
 }
 
-function bfBoundryCol() {
+/*function bfBoundryCol() {
   if (bfX <= 0) {
     bfX = 0;
   }
@@ -240,7 +240,7 @@ function bfBoundryCol() {
   if (bfY >= 320) {
     bfY = 320;
   }
-}
+}*/
 
 function tfBoundryCol() {
   if (tfX <= 0) {
@@ -284,7 +284,7 @@ function ctMove() {
   ctX += ctSpeedX;
 }
 
-function bfMove() {
+/*function bfMove() {
   if (bfY === 0 || bfY + 80 === 400) {
     bfSpeedY = -bfSpeedY;
   }
@@ -295,7 +295,7 @@ function bfMove() {
 
   bfY += bfSpeedY;
   bfX += bfSpeedX;
-}
+}*/
 
 function tfMove(){
   if (tfX === 0 || tfX + 100 === 700) {
@@ -312,6 +312,8 @@ function vaderCollision (){
      spriteY <= vaderY + 50){
        vaderX = 0;
        removeLifeIcon();
+       vaderSpeedX++;
+       vaderSpeedY++;
   }
 }
 
@@ -326,7 +328,7 @@ function ctCollision() {
   }
 }
 
-function bfCollision() {
+/*function bfCollision() {
   if (
     spriteX + 50 >= bfX &&
     spriteY + 50 >= bfY &&
@@ -335,7 +337,7 @@ function bfCollision() {
   ) {
     bfX = 0;
   }
-}
+}*/
 
 function tfCollision (){
   if (spriteX + 50 >= tfX  &&
@@ -360,7 +362,7 @@ function vaderCtCollision(){
     }
 }
 
-function vaderbfCollision(){
+/*function vaderbfCollision(){
   if (
     vaderX + 50 >= bfX &&
     vaderY + 50 >= bfY &&
@@ -373,9 +375,9 @@ function vaderbfCollision(){
    bfX = 700;
 
   }
-}
+}*/
 
-function ctbfCollision(){
+/*function ctbfCollision(){
   if (
     ctX + 50 >= bfX &&
     ctY + 50 >= bfY &&
@@ -388,7 +390,7 @@ function ctbfCollision(){
    bfX = 700;
 
   }
-}
+}*/
 
 function vaderTfCollision(){
   if (
