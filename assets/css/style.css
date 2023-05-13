@@ -162,6 +162,21 @@ body {
   margin-top: 20px;
 }
 
+/* Life point container */
+
+#lifeContainer {
+  display: flex;
+  align-items: center;
+}
+
+.life-icon {
+  width: 30px;
+  height: 30px;
+  background-image: url('/assets/media/clone_trooper.png');
+  background-size: cover;
+  margin-right: 5px;
+}
+
 #game-container {
   position: relative;
   width: 800px;
@@ -198,6 +213,16 @@ body {
   top: 100px;
   right: 300px;
   display: inline-block;
+  padding: 10px 15px;
+  background-color: #666666;
+  border-radius: 20px;
+  background-image: linear-gradient(to bottom, #ddb548, #755600);
+}
+
+.lives {
+  position: absolute;
+  top: 200px;
+  right: 290px;
   padding: 10px 15px;
   background-color: #666666;
   border-radius: 20px;

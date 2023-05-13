@@ -392,6 +392,39 @@ function updateScore(points) {
   // This will need more logic, perhaps when items are built
 }
 
+const lifeContainer = document.getElementById('lifeContainer');
+
+function createLifeIcons() {
+  for (let i = 0; i < lives; i++) {
+    const lifeIcon = document.createElement('div');
+    lifeIcon.classList.add('life-icon');
+    lifeContainer.appendChild(lifeIcon);
+  }
+}
+
+function removeLifeIcon() {
+  const lifeIcons = lifeContainer.getElementsByClassName('life-icon');
+  if (lifeIcons.length > 0) {
+    lifeContainer.removeChild(lifeIcons[lifeIcons.length - 1]);
+  }
+}
+
+// Call the createLifeIcons() function to initialize the life icons
+createLifeIcons();
+
+// Call the removeLifeIcon() function whenever the player loses a life
+// For example, in a collision detection function or game logic
+function decreaselives() {
+  lives--;
+
+  // Check if the player has run out of lives
+  if (lives <= 0) {
+    gameOver(); // Call your game over function when the player runs out of lives
+  }
+
+  removeLifeIcon();
+}
+
 function updateLives() {
   lives--;
   // This will need more logic, perhaps any super items that increase lives?
