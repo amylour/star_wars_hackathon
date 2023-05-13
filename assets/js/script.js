@@ -82,13 +82,13 @@ const spriteHeight = 523;
 let gameFrame = 0;
 const staggerFrames = 5;
 let spriteX = 0;
-let spriteY = 300;
+let spriteY = 100;
 let vaderX = 300;
 let vaderY = 200;
 let ctX = 500;
 let ctY = 145;
-let bfX = 500;
-let bfY = 400;
+let bfX = 400;
+let bfY = 125;
 let tfX = 0;
 let tfY = 285;
 let speed = 5;
@@ -96,8 +96,8 @@ let vaderSpeedX = 4;
 let vaderSpeedY = 4;
 let ctSpeedX = 5;
 let ctSpeedY = 5;
-let bfSpeedX = 6;
-let bfSpeedY = 6;
+let bfSpeedX = 7;
+let bfSpeedY = 7;
 let tfSpeedX = 3;
 
 let upPressed = false;
@@ -143,6 +143,7 @@ function animate() {
   vaderCollision ();
   ctCollision ();
   bfCollision ();
+  tfCollision ();
   requestAnimationFrame(animate);
 }
 
@@ -297,6 +298,16 @@ function bfCollision (){
      spriteX <= bfX + 50 &&
      spriteY <= bfY + 50){
        bfX = 0;
+  }
+}
+
+function tfCollision (){
+  if (spriteX + 50 >= tfX  &&
+    spriteY + 50 >= tfY &&
+   spriteX <= tfX + 50 &&
+   spriteY <= tfY + 50){
+     spriteX = 0;
+     spriteY = 0;
   }
 }
 
