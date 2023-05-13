@@ -7,6 +7,8 @@ window.addEventListener("load", function () {
 
   var closeButton = document.querySelector("#close-button");
   closeButton.addEventListener("click", function (event) {
+    var startCloak = document.querySelector(".start-cloak");
+    startCloak.style.display = "none";
     document.querySelector("#start-modal").style.display = "none";
   });
 });
