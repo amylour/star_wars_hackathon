@@ -96,15 +96,15 @@ let vaderX = 300;
 let vaderY = 200;
 let vaderWidth = 50;
 let vaderHeight = 54;
-let ctX = 500;
-let ctY = 145;
+let ctX = 100;
+let ctY = 300;
 let bfX = 550;
 let bfY = 125;
 let tfX = 0;
 let tfY = 285;
 let speed = 5;
-let vaderSpeedX = 1;
-let vaderSpeedY = 1;
+let vaderSpeedX = 3;
+let vaderSpeedY = 3;
 let ctSpeedX = 3;
 let ctSpeedY = 3;
 //let bfSpeedX = 1;
@@ -312,8 +312,7 @@ function vaderCollision (){
      spriteY <= vaderY + 54){
        vaderX = 0;
        removeLifeIcon();
-       vaderSpeedX++;
-       vaderSpeedY++;
+  
           
   }
 }
@@ -325,7 +324,7 @@ function ctCollision() {
     spriteX <= ctX + 54 &&
     spriteY <= ctY + 50
   ) {
-    ctX = 400;
+    ctX = 200;
     spriteX = 0;
     points += 10;
     updatePointsDisplay();
@@ -350,10 +349,10 @@ function ctCollision() {
 }*/
 
 function tfCollision (){
-  if (spriteX + 50 >= tfX  &&
-    spriteY + 50 >= tfY &&
-   spriteX <= tfX + 50 &&
-   spriteY <= tfY + 50){
+  if (spriteX + 100 >= tfX  &&
+    spriteY + 13 >= tfY &&
+   spriteX <= tfX + 100 &&
+   spriteY <= tfY + 100){
      spriteX = 0;
      spriteY = 0;
 
