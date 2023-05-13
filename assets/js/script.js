@@ -523,30 +523,6 @@ function removeLifeIcon() {
 // Call the createLifeIcons() function to initialize the life icons
 createLifeIcons();
 
-// Call the removeLifeIcon() function whenever the player loses a life
-// For example, in a collision detection function or game logic
-function decreaselives() {
-  lives--;
-
-  // Check if the player has run out of lives
-  if (lives <= 0) {
-    gameOver(); // Call your game over function when the player runs out of lives
-  }
-
-  removeLifeIcon();
-}
-
-function updateLives() {
-  lives--;
-  // This will need more logic, perhaps any super items that increase lives?
-  // Not a necessity but just something I thought I'd add
-
-  if (lives <= 0) {
-    gameOver();
-    // If lives end up at 0, gameOver function called (still not created)
-  }
-}
-
 function gameOver() {
   // // Alert/Modal = Game Over
   gameOverModal.style.display = 'block';
