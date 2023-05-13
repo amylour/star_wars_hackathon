@@ -89,6 +89,8 @@ let ctX = 500;
 let ctY = 145;
 let bfX = 500;
 let bfY = 400;
+let tfX = 0;
+let tfY = 285;
 let speed = 5;
 let vaderSpeedX = 4;
 let vaderSpeedY = 4;
@@ -96,6 +98,7 @@ let ctSpeedX = 5;
 let ctSpeedY = 5;
 let bfSpeedX = 6;
 let bfSpeedY = 6;
+let tfSpeedX = 3;
 
 let upPressed = false;
 let downPressed = false;
@@ -114,6 +117,9 @@ ctImage.src = "assets/media/clone_trooper.png";
 const bfImage = new Image();
 bfImage.src = "assets/media/bf_helmet.png";
 
+const tieFighter = new Image();
+tieFighter.src = "assets/media/tief.png";
+
 function animate() {
   ctx.clearRect(0, 0, canvas_width, canvas_height);
   let position = Math.floor(gameFrame / staggerFrames) % 6;
@@ -122,15 +128,18 @@ function animate() {
   ctx.drawImage(darthImage, vaderX, vaderY, 54, 50);
   ctx.drawImage(ctImage, ctX, ctY, 54, 50);
   ctx.drawImage(bfImage, bfX, bfY, 54, 50);
+  ctx.drawImage(tieFighter, tfX, tfY, 100, 100);
   gameFrame++;
   inputs();
   boundryCollision();
   vaderBoundryCol();
   ctBoundryCol();
   bfBoundryCol();
+  tfBoundryCol();
   vaderMove();
   ctMove();
   bfMove();
+  tfMove();
   vaderCollision ();
   ctCollision ();
   bfCollision ();
@@ -201,6 +210,22 @@ function bfBoundryCol() {
   }
 }
 
+function tfBoundryCol() {
+  if (tfX <= 0) {
+    tfX = 0;
+  }
+  if (tfX >= 700) {
+    tfX = 700;
+  }
+
+  if (tfY <= 0) {
+    bfY = 0;
+  }
+  if (tfY >= 320) {
+    bfY = 320;
+  }
+}
+
 function vaderMove() {
   if (vaderY === 0 || vaderY + 80 === 400) {
     vaderSpeedY = -vaderSpeedY;
@@ -240,29 +265,37 @@ function bfMove() {
   bfX += bfSpeedX;
 }
 
+function tfMove(){
+  if (tfX === 0 || tfX + 100 === 700) {
+    tfSpeedX = -tfSpeedX;
+  }
+
+  tfX += tfSpeedX;
+}
+
 function vaderCollision (){
-  if (spriteX + 60 >= vaderX  &&
-      spriteY + 60 >= vaderY &&
-     spriteX <= vaderX + 60 &&
-     spriteY <= vaderY + 60){
+  if (spriteX + 50 >= vaderX  &&
+      spriteY + 50 >= vaderY &&
+     spriteX <= vaderX + 50 &&
+     spriteY <= vaderY + 50){
        vaderX = 0;
   }
 }
 
 function ctCollision (){
-  if (spriteX + 60 >= ctX  &&
-      spriteY + 60 >= ctY &&
-     spriteX <= ctX + 60 &&
-     spriteY <= ctY + 60){
+  if (spriteX + 50 >= ctX  &&
+      spriteY + 50 >= ctY &&
+     spriteX <= ctX + 50 &&
+     spriteY <= ctY + 50){
        ctX = 0;
   }
 }
 
 function bfCollision (){
-  if (spriteX + 60 >= bfX  &&
-      spriteY + 60 >= bfY &&
-     spriteX <= bfX + 60 &&
-     spriteY <= bfY + 60){
+  if (spriteX + 50 >= bfX  &&
+      spriteY + 50 >= bfY &&
+     spriteX <= bfX + 50 &&
+     spriteY <= bfY + 50){
        bfX = 0;
   }
 }
