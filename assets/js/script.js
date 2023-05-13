@@ -49,6 +49,15 @@ function showTime() {
   timeTaken.innerHTML = `${m}:${s}`;
 }
 
+function resetTimer() {
+  clearInterval(int);
+  hours = 0;
+  minutes = 0;
+  seconds = 0;
+  milliseconds = 0;
+  timeTaken.innerHTML = "00:00";
+}
+
 startButton.addEventListener("click", timer);
 
 // User pressing 'K' key to dismiss message //
@@ -499,8 +508,6 @@ function updatePointsDisplay() {
   pointsDisplay.textContent = points;
 }
 
-const lifeContainer = document.getElementById('lifeContainer');
-
 function createLifeIcons() {
   for (let i = 0; i < lives; i++) {
     const lifeIcon = document.createElement('div');
@@ -531,14 +538,33 @@ function gameOver() {
 }
 
 function restartGame() {
-  // Variables need to be reset(?)
+  // Reset game variables and state
+  points = 0;
+  updatePointsDisplay();
+  createLifeIcons();
+  resetTimer();
+  timer();
+  // The below variables won't update - sprites keep getting faster.
+  // Perhaps Shaun might know how to set them to default?
+  spriteX = 0;
+  spriteY = 100;
+  // vaderX = 300;
+  // vaderY = 200;
+  // ctX = 500;
+  // ctY = 145;
+  // bfX = 550;
+  // bfY = 125;
+  // tfX = 0;
+  // tfY = 285;
 
-  // This hides the gameOver() modal
-  modal.style.display = 'none';
+  // Hide game over modal
+  gameOverModal.style.display = 'none';
 
-  // Start the game again - not sure how to target this at the moment
-  // Perhaps animate() needs to be called again?
+  // Start the game again
+  animate();
 }
+
+restartButton.addEventListener('click', restartGame);
 
 // Sound toggle functionality. //
 
