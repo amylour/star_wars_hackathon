@@ -140,7 +140,7 @@ tieFighter.src = "assets/media/tief.png";
 const gameOverModal = document.getElementById("gameOverModal");
 const restartButton = document.getElementById("restartButton");
 
-function animate() {
+function animate(event) {
   ctx.clearRect(0, 0, canvas_width, canvas_height);
   let position = Math.floor(gameFrame / staggerFrames) % 6;
   frameX = spriteWidth * position;
@@ -392,8 +392,6 @@ function keyUp(event) {
     rightPressed = false;
   }
 }
-
-animate();
 
 // Branch "keiron" -- created score + lives variables with basic functions.
 // You don't have to use any of this code - just thought I'd write some to help out.
