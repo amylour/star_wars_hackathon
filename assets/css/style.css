@@ -53,7 +53,18 @@ body {
   overflow: hidden;
 }
 
+/* Hide start button and timer for DOM load */
+
+#start-button {
+  opacity: 0;
+}
+
+#timer {
+  opacity: 0;
+}
+
 /* Title styling */
+
 .title-container {
   display: flex;
   justify-content: center;
