@@ -233,8 +233,8 @@ body {
 
 .timer {
   position: absolute;
-  top: 400px;
-  right: 300px;
+  top: 100px;
+  right: 550px;
   display: inline-block;
   padding: 10px 15px;
   background-color: #666666;
