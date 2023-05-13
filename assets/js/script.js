@@ -147,7 +147,10 @@ const tieFighter = new Image();
 tieFighter.src = "assets/media/tief.png";
 
 const gameOverModal = document.getElementById("gameOverModal");
+const gameWonModal = document.getElementById("gameWonModal");
+
 const restartButton = document.getElementById("restartButton");
+const restartGameWon = document.getElementById("restartGameWon");
 
 function animate(event) {
   ctx.clearRect(0, 0, canvas_width, canvas_height);
@@ -506,7 +509,10 @@ function keyUp(event) {
 function updatePointsDisplay() {
   const pointsDisplay = document.getElementById("pointsCount");
   pointsDisplay.textContent = points;
-}
+  if (points >= 20) {
+    gameWon();
+  }
+};
 
 function createLifeIcons() {
   for (let i = 0; i < lives; i++) {
@@ -545,6 +551,11 @@ function gameOver() {
 
 }
 
+function gameWon() {
+  gameWonModal.style.display = 'block';
+  restartButton.addEventListener('click', restartGame);
+};
+
 function restartGame() {
   // Reset game variables and state
   points = 0;
@@ -574,13 +585,17 @@ function restartGame() {
   // tfY = 285;
 
   // Hide game over modal
-  gameOverModal.style.display = 'none';
+  if (gameOverModal) {
+    gameOverModal.style.display = 'none'
+  } if (gameWonModal) {
+    gameWonModal.style.display = 'none'
+  }
 
   // Start the game again
   animate();
 }
 
-restartButton.addEventListener('click', restartGame);
+// restartButton.addEventListener('click', restartGame);
 
 // Sound toggle functionality. //
 
