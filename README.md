@@ -22,7 +22,7 @@
 5. [Features](#features "Features")
    + [Existing Features](#existing-features "Existing Features")
       + [Start Screen](#start-screen "Start Screen")
-      + [Game Screen](#quiz-screen "Game Screen")
+      + [Game Screen](#game-screen "Game Screen")
       + [Score Screen](#score-screen "Score Screen")
    + [Future Features](#future-features "Future Features")
 6. [Testing](#testing "Testing")

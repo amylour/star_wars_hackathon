@@ -94,6 +94,18 @@ body {
   background-position: center;
 }
 
+.tick-button {
+  padding: 5px, 10px;
+  background-color: #bfa300;
+  border: 2px solid #636363;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+
 .start-view {
   position: absolute;
   top:75%;
