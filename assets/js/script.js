@@ -523,7 +523,7 @@ function removeLifeIcon() {
   }
   if (lifeIcons.length <= 0) {
     gameOver();
-    // If lives end up at 0, gameOver function called (still not created)
+    // If lives end up at 0, gameOver function called
   }
 }
 
@@ -535,6 +535,14 @@ function gameOver() {
   gameOverModal.style.display = 'block';
   // // Button - Retry = Start
   restartButton.addEventListener('click', restartGame);
+  // // Stop the sprites from moving anymore
+  ctSpeedX = 0
+  ctSpeedY = 0
+  vaderSpeedX = 0
+  vaderSpeedY = 0
+  tfSpeedX = 0
+  tfSpeedY = 0
+
 }
 
 function restartGame() {
@@ -546,6 +554,14 @@ function restartGame() {
   timer();
   // The below variables won't update - sprites keep getting faster.
   // Perhaps Shaun might know how to set them to default?
+  // // Hi! Jacob Here. Here's the things you need to target to change
+  // // the speed on the various enemies
+  ctSpeedX = 1
+  ctSpeedY = 1
+  vaderSpeedX = 1
+  vaderSpeedY = 1
+  tfSpeedX = 1
+  tfSpeedY = 1
   spriteX = 0;
   spriteY = 100;
   // vaderX = 300;
