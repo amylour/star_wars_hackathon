@@ -131,6 +131,9 @@ function animate() {
   vaderMove();
   ctMove();
   bfMove();
+  vaderCollision ();
+  ctCollision ();
+  bfCollision ();
   requestAnimationFrame(animate);
 }
 
@@ -235,6 +238,33 @@ function bfMove() {
 
   bfY += bfSpeedY;
   bfX += bfSpeedX;
+}
+
+function vaderCollision (){
+  if (spriteX + 60 >= vaderX  &&
+      spriteY + 60 >= vaderY &&
+     spriteX <= vaderX + 60 &&
+     spriteY <= vaderY + 60){
+       vaderX = 0;
+  }
+}
+
+function ctCollision (){
+  if (spriteX + 60 >= ctX  &&
+      spriteY + 60 >= ctY &&
+     spriteX <= ctX + 60 &&
+     spriteY <= ctY + 60){
+       ctX = 0;
+  }
+}
+
+function bfCollision (){
+  if (spriteX + 60 >= bfX  &&
+      spriteY + 60 >= bfY &&
+     spriteX <= bfX + 60 &&
+     spriteY <= bfY + 60){
+       bfX = 0;
+  }
 }
 
 document.body.addEventListener("keydown", keyDown);
