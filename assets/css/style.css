@@ -310,11 +310,27 @@ footer > ul > li >a {
 }
 
 /* Audio Switch */
+
+/* The sound container positioning */
+
+#sound-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 20px;
+}
+
+#sound-text {
+  color: yellow;
+  width: 80px;
+  text-align: center;
+}
+
 /* The switch - the box around the slider */
 .switch {
   position: relative;
   display: inline-block;
-  width: 40px;
+  width: 80px;
   height: 24px;
   margin-bottom:20px;
 }
@@ -360,9 +376,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(14px);
-  -ms-transform: translateX(14px);
-  transform: translateX(14px);
+  -webkit-transform: translateX(55px);
+  -ms-transform: translateX(55px);
+  transform: translateX(55px);
 }
 
 /* Rounded sliders */
