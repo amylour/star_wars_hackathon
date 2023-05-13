@@ -314,6 +314,11 @@ function vaderCollision (){
        removeLifeIcon();
        vaderSpeedX++;
        vaderSpeedY++;
+       if(vaderSpeedX == 8 && vaderSpeedY == 8){
+        vaderSpeedX--;
+        vaderSpeedY--;
+       }
+          
   }
 }
 
@@ -325,6 +330,12 @@ function ctCollision() {
     spriteY <= ctY + 50
   ) {
     ctX = 0;
+    ctSpeedX++;
+    ctSpeedY++;
+    if(ctSpeedX == 8 && ctSpeedY == 8){
+      ctSpeedX = 8;
+      ctSpeedY = 8;
+    }
   }
 }
 
