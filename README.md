@@ -23,13 +23,14 @@
    + [Existing Features](#existing-features "Existing Features")
       + [Start Screen](#start-screen "Start Screen")
       + [Game Screen](#game-screen "Game Screen")
-      + [Score Screen](#score-screen "Score Screen")
+      + [End Screen](#end-screen "End Screen")
    + [Future Features](#future-features "Future Features")
 6. [Testing](#testing "Testing")
    + [Bugs](#bugs "Bugs")
    + [Validator Testing](#validator-testing "Validator Testing") 
 8. [Deployment](#deployment "Deployment")
 9. [Credits](#credits "Credits")
+
 
 ### **User Stories**
 
@@ -56,11 +57,41 @@
 
 ## **Features**
 
+This game includes three pages:
+ + Start Screen
+ + Game Screen
+ + End Screen
+
+### **Existing Features**
+
+### Start Screen
+
+This is the first page that appears on the top of the screen the Saber Scroll image is added and then the welcome message with the rules of this Game. There is a button that enables user to start playing the game.
+
+![The start screen]()
+
+### Game Screen
+
+When the user wants to play the game using the play button the game screen reveals. On the top of the screen the Saber scroll image is and a timer is added.
+This page also includes footer. On the lift side of the page, copyright and link to GitHub page is added and on the right side the team members with a link to their GitHub pages are added.
+
+![The game screen]()
+
+### End Screen
+
+This end screen reveals when the game overs. In this screen a button is added that if the user wanted to play the game again they can start playing again simply by clicking the play again button.
+
+![The end screen]()
+
+
+
+
+
 ## **Creating a Branch**
 
 There are multiple ways to create a branch in your IDE (Integrated development environment), but this is one of the easiest:
 
-* Go to the GitHub repository for Star Wars Hackathon.
+* Go tis o the GitHub repository for Star Wars Hackathon.
 
 * You should be able to locate "Branch" (it'll normally say "1 branch" if there's just one, or "2 branches" etc.,). Click it.
 
