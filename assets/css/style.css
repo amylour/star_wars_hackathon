@@ -172,7 +172,7 @@ body {
 .lives {
   position: absolute;
   top: 100px;
-  right: 230px;
+  right: 200px;
   padding: 10px 15px;
   border-radius: 20px;
 }
@@ -183,6 +183,21 @@ body {
   background-image: url('/assets/media/grougu_lives_2_55x40.png');
   background-size: cover;
   margin-right: 10px;
+}
+
+/* Points */
+
+#pointContainer {
+  margin-top: 10px;
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  font-size: 40px;
+  color: #bfa300;
+}
+
+#pointsCount {
+  font-weight: bold;
 }
 
 #game-container {
