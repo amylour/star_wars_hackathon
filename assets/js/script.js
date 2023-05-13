@@ -68,15 +68,6 @@ function dismissMessage(event) {
   }
 }
 
-// Make start button and timer appear after play button is pressed on start modal //
-
-document.getElementById("close-button").addEventListener("click", playButton)
-
-function playButton(event) {
-  document.getElementById("timer").style.opacity = ("100")
-  document.getElementById("start-button").style.opacity = ("100")
-}
-
 // Game functionality //
 
 const canvas = document.getElementById("game-canvas");
@@ -94,6 +85,8 @@ let spriteX = 0;
 let spriteY = 100;
 let vaderX = 300;
 let vaderY = 200;
+let vaderWidth = 50;
+let vaderHeight = 54;
 let ctX = 500;
 let ctY = 145;
 let bfX = 400;
@@ -108,6 +101,7 @@ let ctSpeedY = 5;
 let bfSpeedX = 7;
 let bfSpeedY = 7;
 let tfSpeedX = 3;
+let tfSpeedY = 3;
 
 let upPressed = false;
 let downPressed = false;
@@ -137,7 +131,7 @@ function animate(event) {
   let position = Math.floor(gameFrame / staggerFrames) % 6;
   frameX = spriteWidth * position;
   ctx.drawImage(playerImage, spriteX, spriteY, 100, 13);
-  ctx.drawImage(darthImage, vaderX, vaderY, 54, 50);
+  ctx.drawImage(darthImage, vaderX, vaderY, vaderWidth, vaderHeight);
   ctx.drawImage(ctImage, ctX, ctY, 54, 50);
   ctx.drawImage(bfImage, bfX, bfY, 54, 50);
   ctx.drawImage(tieFighter, tfX, tfY, 100, 100);
@@ -152,10 +146,10 @@ function animate(event) {
   ctMove();
   bfMove();
   tfMove();
-  vaderCollision ();
-  ctCollision ();
-  bfCollision ();
-  tfCollision ();
+  vaderCollision();
+  ctCollision();
+  bfCollision();
+  tfCollision();
   requestAnimationFrame(animate);
 }
 
@@ -174,7 +168,7 @@ function boundryCollision() {
   }
 }
 
-function vaderBoundryCol() {
+function vaderBoundryCol(){
   if (vaderX <= 0) {
     vaderX = 0;
   }
@@ -278,22 +272,20 @@ function bfMove() {
   bfX += bfSpeedX;
 }
 
-function tfMove() {
+function tfMove(){
   if (tfX === 0 || tfX + 100 === 700) {
     tfSpeedX = -tfSpeedX;
   }
-
+  
   tfX += tfSpeedX;
 }
 
-function vaderCollision() {
-  if (
-    spriteX + 50 >= vaderX &&
-    spriteY + 50 >= vaderY &&
-    spriteX <= vaderX + 50 &&
-    spriteY <= vaderY + 50
-  ) {
-    vaderX = 0;
+function vaderCollision (){
+  if (spriteX + 50 >= vaderX  &&
+      spriteY + 50 >= vaderY &&
+     spriteX <= vaderX + 50 &&
+     spriteY <= vaderY + 50){
+       vaderX = 0;
   }
 }
 
@@ -326,6 +318,7 @@ function tfCollision (){
    spriteY <= tfY + 50){
      spriteX = 0;
      spriteY = 0;
+
   }
 }
 
