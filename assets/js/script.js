@@ -67,7 +67,7 @@ function dismissMessage(event) {
     message.style.opacity = "0"
   }
 }
-
+// Shaun Branch Game Play and Logic //
 // Game functionality //
 
 const canvas = document.getElementById("game-canvas");
@@ -85,6 +85,8 @@ let spriteX = 0;
 let spriteY = 100;
 let vaderX = 300;
 let vaderY = 200;
+let vaderWidth = 50;
+let vaderHeight = 54;
 let ctX = 500;
 let ctY = 145;
 let bfX = 400;
@@ -99,6 +101,7 @@ let ctSpeedY = 5;
 let bfSpeedX = 7;
 let bfSpeedY = 7;
 let tfSpeedX = 3;
+let tfSpeedY = 3;
 
 let upPressed = false;
 let downPressed = false;
@@ -125,7 +128,7 @@ function animate() {
   let position = Math.floor(gameFrame / staggerFrames) % 6;
   frameX = spriteWidth * position;
   ctx.drawImage(playerImage, spriteX, spriteY, 100, 13);
-  ctx.drawImage(darthImage, vaderX, vaderY, 54, 50);
+  ctx.drawImage(darthImage, vaderX, vaderY, vaderWidth, vaderHeight);
   ctx.drawImage(ctImage, ctX, ctY, 54, 50);
   ctx.drawImage(bfImage, bfX, bfY, 54, 50);
   ctx.drawImage(tieFighter, tfX, tfY, 100, 100);
@@ -140,10 +143,10 @@ function animate() {
   ctMove();
   bfMove();
   tfMove();
-  vaderCollision ();
-  ctCollision ();
-  bfCollision ();
-  tfCollision ();
+  vaderCollision();
+  ctCollision();
+  bfCollision();
+  tfCollision();
   requestAnimationFrame(animate);
 }
 
@@ -162,7 +165,7 @@ function boundryCollision() {
   }
 }
 
-function vaderBoundryCol() {
+function vaderBoundryCol(){
   if (vaderX <= 0) {
     vaderX = 0;
   }
@@ -267,10 +270,12 @@ function bfMove() {
 }
 
 function tfMove(){
+
   if (tfX === 0 || tfX + 100 === 700) {
     tfSpeedX = -tfSpeedX;
   }
 
+  
   tfX += tfSpeedX;
 }
 
@@ -279,7 +284,10 @@ function vaderCollision (){
       spriteY + 50 >= vaderY &&
      spriteX <= vaderX + 50 &&
      spriteY <= vaderY + 50){
-       vaderX = 0;
+      vaderWidth = 50;
+      vaderHeight = 50;
+      vaderX = 0;
+      vaderY = 0;
   }
 }
 
@@ -308,6 +316,7 @@ function tfCollision (){
    spriteY <= tfY + 50){
      spriteX = 0;
      spriteY = 0;
+
   }
 }
 
