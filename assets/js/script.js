@@ -105,8 +105,8 @@ let tfY = 285;
 let speed = 5;
 let vaderSpeedX = 1;
 let vaderSpeedY = 1;
-let ctSpeedX = 1;
-let ctSpeedY = 1;
+let ctSpeedX = 3;
+let ctSpeedY = 3;
 //let bfSpeedX = 1;
 //let bfSpeedY = 1;
 let tfSpeedX = 1;
@@ -306,32 +306,27 @@ function tfMove(){
 }
 
 function vaderCollision (){
-  if (spriteX + 50 >= vaderX  &&
-      spriteY + 50 >= vaderY &&
+  if (spriteX + 100 >= vaderX  &&
+      spriteY + 13 >= vaderY &&
      spriteX <= vaderX + 50 &&
-     spriteY <= vaderY + 50){
+     spriteY <= vaderY + 54){
        vaderX = 0;
        removeLifeIcon();
        vaderSpeedX++;
        vaderSpeedY++;
-       if(vaderSpeedX == 8 && vaderSpeedY == 8){
-        vaderSpeedX--;
-        vaderSpeedY--;
-       }
           
   }
 }
 
 function ctCollision() {
   if (
-    spriteX + 50 >= ctX &&
-    spriteY + 50 >= ctY &&
-    spriteX <= ctX + 50 &&
+    spriteX + 100 >= ctX &&
+    spriteY + 13 >= ctY &&
+    spriteX <= ctX + 54 &&
     spriteY <= ctY + 50
   ) {
-    ctX = 0;
-    ctSpeedX++;
-    ctSpeedY++;
+    ctX = 400;
+    spriteX = 0;
     points += 10;
     updatePointsDisplay();
     if(ctSpeedX == 8 && ctSpeedY == 8){
