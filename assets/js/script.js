@@ -311,6 +311,7 @@ function vaderCollision (){
      spriteX <= vaderX + 50 &&
      spriteY <= vaderY + 50){
        vaderX = 0;
+       removeLifeIcon();
   }
 }
 
