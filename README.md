@@ -1,4 +1,4 @@
-# **Game name**
+# **Saber Scroll**
 
 ![Responsiveness Photo]()
 
@@ -8,7 +8,6 @@
 
 1. [Project Goals](#project-goals "ProjectGoals")
    + [User Goals](#user-goals "User Goals")
-   + [Site Owner Goals](#site-owner-goals "Site Ower Goals")
 2. [User Experience](#user-experience "User Experience")
    + [Target Audience](#target-audience "Target Audience")
    + [User Requirements and Expectations](#user-requirements-and-expectations "User Requirements and Expections")
@@ -17,8 +16,9 @@
    + [Design Choices](#design-choices "Design Choices")
    + [Colour](#colour "Colour")
    + [Fonts](#fonts "Fonts")
-4. [Technologies Used](#technologies-used "Technologies Used")
-   + [Languages](#languages "Languages")
+   + [Music & Sounds](#music--sounds "Music & Sounds")
+   + [Wireframes](#wireframes "Wireframes")
+4. [Technologies, Languages & Programs Used](#technologies-languages--programs-used)
 5. [Features](#features "Features")
    + [Existing Features](#existing-features "Existing Features")
       + [Start Screen](#start-screen "Start Screen")
@@ -28,9 +28,21 @@
 6. [Testing](#testing "Testing")
    + [Bugs](#bugs "Bugs")
    + [Validator Testing](#validator-testing "Validator Testing") 
-8. [Deployment](#deployment "Deployment")
-9. [Credits](#credits "Credits")
+7. [Deployment, Development & Version Control](#deployment-development--version-control)
+8. [Credits](#credits "Credits")
 
+## **Project Goals**
+
+### **User Goals**
+
+
+<hr>
+
+## **User Experience**
+
+### **Target Audience**
+
+### **User Requirements and Expectations**
 
 ### **User Stories**
 
@@ -54,6 +66,94 @@
 * As a developer, I want the game to be responsive and smooth to users' interactions on multiple devices (mobile and desktop).
 * As a developer, I want to ensure that the game's graphics and sound effects are immersive and engaging
 
+<hr>
+
+## **Design**
+
+### **Design Choices**
+
+#### **_Components_**
+
+The components of this project were inspired by classic pixel art and were painted in Procreate. 
+
+![screenshot of lightsabers](documentation/lightsabers.png)<br>
+_Lightsabers_
+  
+<br>  
+
+![screenshot baddies](documentation/baddies.png)<br>
+_Baddies_
+  
+<br>
+
+![screenshot snacks](documentation/snacks.png)<br>
+_Snacks & Extra Lives_
+
+<br>
+
+![screenshot lives](documentation/lives.png)<br>
+_Lives_
+
+<br>
+
+#### **_Level Backgrounds_**
+
+The backgrounds for this project were painted in Procreate. They have been inspired by classic pixel art and the Game Boy Advance game [Star Wars: Episode III - Revenge of the Sith](https://en.wikipedia.org/wiki/Star_Wars:_Episode_III_%E2%80%93_Revenge_of_the_Sith_(video_game))
+
+![level 1 - Death Star](documentation/game-bg.png)<br>
+_Level 1 - Death Star_
+  
+
+![level 2 - Endor]()<br>
+_Level 2 - Endor_
+  
+
+![level 3 - Mustafar](documentation/mustafar.png)<br>
+_Level 3 - Mustafar_
+
+### **Colour**
+
+### **Fonts**
+
+The fonts that we used were 'Noto Sans Display' from [Google Fonts](https://www.googlefonts.com) for the body text and 'SF Distant Galaxy' from [DaFont](https://www.dafont.com/sf-distant-galaxy.font)
+
+### **Music & Sounds**
+
+### **Wireframes**
+Some basic wireframes were created so the team could be on the same page when creating the layout during coding sessions.
+
+### **Landing page - Landscape**
+![Base Page Landscape](documentation/base-screen.png)
+
+### **Landing page - Portrait**
+![Base Page Portrait](documentation/base-mobile.png)
+
+### **In Game Screen**
+![In Game](documentation/in-game.png)
+
+### **How To Play Screen**
+![How To Play](documentation/how-to-play.png)
+
+### **Game Over Screen**
+![Game Over](documentation/game-over.png)
+
+<hr>
+
+## **Technologies, Languages & Programs Used** 
+
+- HTML, CSS + JavaScript 
+- Procreate - used to create the Star Wars artwork and edit images 
+- GitHub - used to save and store all files for this website  
+- Git - used for version control
+- Google Fonts - fonts were imported from here 
+- Simple Image Resizer - to resize all artwork
+- Tiny PNG - to compress images 
+- Google Dev Tools - to debug and for testing responsiveness 
+- Google Lighthouse - for auditing the website
+- W3C Validator - for validating the HTML and CSS code 
+- JSHint - for validating JavaScript
+
+<hr>
 
 ## **Features**
 
@@ -83,9 +183,17 @@ This end screen reveals when the game overs. In this screen a button is added th
 
 ![The end screen]()
 
+<hr>
 
+## **Testing**
 
+## **Bugs**
 
+## **Validator Testing**
+
+<hr>
+
+## **Deployment, Development & Version Control**
 
 ## **Creating a Branch**
 
@@ -178,42 +286,9 @@ If it happens we will just deal with it but let's try avoid it xD
 
 I've tried my best to be as comprehensive as possible in this so that any new-hackathoners and those who are new to branching and PRs can be informed, but overall we will deal with any potential issues as a team. :D 
 
+<hr>
 
-    `          __
-    .-.__      \ .-.  ___  __
-    |_|  '--.-.-(   \/\;;\_\.-._______.-.
-    (-)___     \ \ .-\ \;;\(   \       \ \
-    Y    '---._\_((Q)) \;;\\ .-\     __(_)
-    I           __'-' / .--.((Q))---'    \,
-    I     ___.-:    \|  |   \'-'_          \
-    A  .-'      \ .-.\   \   \ \ '--.__     '\
-    |  |____.----((Q))\   \__|--\_      \     '
-        ( )        '-'  \_  :  \-' '--.___\
-        Y                \  \  \       \(_)
-        I                 \  \  \         \,
-        I                  \  \  \          \
-        A                   \  \  \          '\
-        |                    \  \__|           '
-                            \_:.  \
-                                \ \  \
-                                \ \  \
-                                \_\_|
-    `
+## **Credits**
 
-## **Wireframes**
-Some basic wireframes were created so the team could be on the same page when creating the layout during coding sessions.
 
-### **Landing page - Landscape**
-![Base Page Landscape](documentation/base-screen.png)
 
-### **Landing page - Portrait**
-![Base Page Portrait](documentation/base-mobile.png)
-
-### **In Game Screen**
-![In Game](documentation/in-game.png)
-
-### **How To Play Screen**
-![How To Play](documentation/how-to-play.png)
-
-### **Game Over Screen**
-![Game Over](documentation/game-over.png)
