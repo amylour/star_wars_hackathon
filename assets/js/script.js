@@ -117,6 +117,11 @@ let downPressed = false;
 let leftPressed = false;
 let rightPressed = false;
 
+let score = 0;
+let lives = 3;
+
+
+
 const playerImage = new Image();
 playerImage.src = "assets/media/bluels.png";
 
@@ -160,6 +165,11 @@ function animate() {
   bfCollision();
   tfCollision();
   requestAnimationFrame(animate);
+}
+
+function updateScore(points) {
+  score += points;
+  // This will need more logic, perhaps when items are built
 }
 
 function boundryCollision() {
@@ -388,13 +398,6 @@ animate();
 // Branch "keiron" -- created score + lives variables with basic functions.
 // You don't have to use any of this code - just thought I'd write some to help out.
 
-let score = 0;
-let lives = 3;
-
-function updateScore(points) {
-  score += points;
-  // This will need more logic, perhaps when items are built
-}
 
 const lifeContainer = document.getElementById('lifeContainer');
 
