@@ -550,10 +550,9 @@ function updateLives() {
 
 function gameOver() {
   // // Alert/Modal = Game Over
-  // gameOverModal.style.display = 'block';
+  gameOverModal.style.display = 'block';
   // // Button - Retry = Start
-  // restartButton.addEventListener('click', restartGame);
-  alert("You're a poohead!")
+  restartButton.addEventListener('click', restartGame);
 }
 
 function restartGame() {
