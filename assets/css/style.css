@@ -147,7 +147,7 @@ body {
 .game-over-modal {
   display: none;
   position: fixed;
-  top: 0;
+  top: 25%;
   left: 0;
   width: 100%;
   height: 100%;
@@ -156,16 +156,29 @@ body {
 }
 
 .game-over-modal-content {
-  background-color: #fff;
+  background-image: linear-gradient(#bbbbbb, #636363);
+  border-radius: 10%;
   padding: 20px;
-  max-width: 300px;
-  margin: 100px auto;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right:auto;
   text-align: center;
 }
 
 #restartButton {
-  padding: 10px 20px;
-  margin-top: 20px;
+ padding: 5px, 10px;
+  background-color: #bfa300;
+  border: 2px solid #636363;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.gif-img {
+  margin-bottom: 30px;
 }
 
 /* Life point container */
