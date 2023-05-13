@@ -49,6 +49,15 @@ function showTime() {
   timeTaken.innerHTML = `${m}:${s}`;
 }
 
+function resetTimer() {
+  clearInterval(int);
+  hours = 0;
+  minutes = 0;
+  seconds = 0;
+  milliseconds = 0;
+  timeTaken.innerHTML = "00:00";
+}
+
 startButton.addEventListener("click", timer);
 
 // User pressing 'K' key to dismiss message //
@@ -533,6 +542,8 @@ function restartGame() {
   points = 0;
   updatePointsDisplay();
   createLifeIcons();
+  resetTimer();
+  timer();
   // The below variables won't update - sprites keep getting faster.
   // Perhaps Shaun might know how to set them to default?
   spriteX = 0;
