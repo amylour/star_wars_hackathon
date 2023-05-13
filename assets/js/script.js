@@ -98,7 +98,7 @@ let vaderWidth = 50;
 let vaderHeight = 54;
 let ctX = 500;
 let ctY = 145;
-let bfX = 400;
+let bfX = 550;
 let bfY = 125;
 let tfX = 0;
 let tfY = 285;
@@ -165,6 +165,11 @@ function animate(event) {
   bfCollision();
   tfCollision();
   vaderCtCollision();
+  vaderbfCollision();
+  ctbfCollision();
+  vaderTfCollision();
+  ctTfCollision();
+  bfTfCollision();
   requestAnimationFrame(animate);
 }
 
@@ -352,6 +357,75 @@ function vaderCtCollision(){
      vaderX = 0;
      ctX = 400;
     }
+}
+
+function vaderbfCollision(){
+  if (
+    vaderX + 50 >= bfX &&
+    vaderY + 50 >= bfY &&
+    vaderX <= bfX + 50 &&
+    vaderY <= bfY + 50
+  ) {
+   vaderX = 0;
+   vaderY = 0;
+   bfY = 0;
+   bfX = 700;
+
+  }
+}
+
+function ctbfCollision(){
+  if (
+    ctX + 50 >= bfX &&
+    ctY + 50 >= bfY &&
+    ctX <= bfX + 50 &&
+    ctY <= bfY + 50
+  ) {
+   ctX = 0;
+   ctY = 100;
+   bfY = 0;
+   bfX = 700;
+
+  }
+}
+
+function vaderTfCollision(){
+  if (
+    vaderX + 50 >= tfX &&
+    vaderY + 50 >= tfY &&
+    vaderX <= tfX + 50 &&
+    vaderY <= tfY + 50
+  ) {
+   vaderX = 0;
+   vaderY = 100;
+
+  }
+}
+
+function ctTfCollision(){
+  if (
+    ctX + 50 >= tfX &&
+    ctY + 50 >= tfY &&
+    ctX <= tfX + 50 &&
+    ctY <= tfY + 50
+  ) {
+   ctX = 0;
+   ctY = 100;
+
+  }
+}
+
+function bfTfCollision(){
+  if (
+    bfX + 50 >= tfX &&
+    bfY + 50 >= tfY &&
+    bfX <= tfX + 50 &&
+    bfY <= tfY + 50
+  ) {
+   bfX = 0;
+   bfY = 100;
+
+  }
 }
 document.body.addEventListener("keydown", keyDown);
 document.body.addEventListener("keyup", keyUp);
