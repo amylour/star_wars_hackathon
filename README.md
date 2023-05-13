@@ -16,6 +16,7 @@
    + [Design Choices](#design-choices "Design Choices")
    + [Colour](#colour "Colour")
    + [Fonts](#fonts "Fonts")
+   + [Music & Sounds](#music--sounds "Music & Sounds")
    + [Wireframes](#wireframes "Wireframes")
 4. [Technologies, Languages & Programs Used](#technologies-languages--programs-used)
 5. [Features](#features "Features")
@@ -114,7 +115,9 @@ _Level 3 - Mustafar_
 
 ### **Fonts**
 
-The fonts that we used were 'Noto Sans Display' from Google Fonts for the body text and 'SF Distant Galaxy' from [DaFont](https://www.dafont.com/sf-distant-galaxy.font)
+The fonts that we used were 'Noto Sans Display' from [Google Fonts](https://www.googlefonts.com) for the body text and 'SF Distant Galaxy' from [DaFont](https://www.dafont.com/sf-distant-galaxy.font)
+
+### **Music & Sounds**
 
 ### **Wireframes**
 Some basic wireframes were created so the team could be on the same page when creating the layout during coding sessions.
