@@ -132,7 +132,7 @@ tieFighter.src = "assets/media/tief.png";
 const gameOverModal = document.getElementById("gameOverModal");
 const restartButton = document.getElementById("restartButton");
 
-function animate() {
+function animate(event) {
   ctx.clearRect(0, 0, canvas_width, canvas_height);
   let position = Math.floor(gameFrame / staggerFrames) % 6;
   frameX = spriteWidth * position;
@@ -420,4 +420,6 @@ function restartGame() {
   // Perhaps animate() needs to be called again?
 }
 
-animate();
+// Have the start button call the animate() function to start the game //
+
+document.getElementById("start-button").addEventListener("click", animate)
