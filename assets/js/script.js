@@ -1,4 +1,4 @@
-// open rules and player name modal on window load
+// open rules modal on window load
 
 window.addEventListener("load", function () {
   this.setTimeout(function open(event) {
@@ -568,7 +568,7 @@ document.getElementById("sound-slider").addEventListener("click", toggleMusic);
 function toggleMusic(event) {
   let saberSong = document.getElementById("music-player");
   // execute song pause/play for mute button
-  return daySong.paused ? daySong.play() : daySong.pause();
+  return saberSong.paused ? saberSong.play() : saberSong.pause();
 }
 
 // Have the start button call the animate() function to start the game //
