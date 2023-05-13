@@ -57,17 +57,17 @@ document.body.addEventListener("keydown", dismissMessage);
 
 function dismissMessage(event) {
   if (event.keyCode === 75) {
-    message = document.getElementById("if-not-desktop")
+    message = document.getElementById("if-not-desktop");
 
-    document.getElementById("game-container").style.opacity = ("100")
-    document.getElementById("start-button-container").style.opacity = ("100")
+    document.getElementById("game-container").style.opacity = "100";
+    document.getElementById("start-button-container").style.opacity = "100";
 
-    message.style.width = "0"
-    message.style.height = "0"
-    message.style.opacity = "0"
+    message.style.width = "0";
+    message.style.height = "0";
+    message.style.opacity = "0";
   }
 }
-// Shaun Branch Game Play and Logic //
+
 // Game functionality //
 
 const canvas = document.getElementById("game-canvas");
@@ -123,7 +123,10 @@ bfImage.src = "assets/media/bf_helmet.png";
 const tieFighter = new Image();
 tieFighter.src = "assets/media/tief.png";
 
-function animate() {
+const gameOverModal = document.getElementById("gameOverModal");
+const restartButton = document.getElementById("restartButton");
+
+function animate(event) {
   ctx.clearRect(0, 0, canvas_width, canvas_height);
   let position = Math.floor(gameFrame / staggerFrames) % 6;
   frameX = spriteWidth * position;
@@ -270,11 +273,9 @@ function bfMove() {
 }
 
 function tfMove(){
-
   if (tfX === 0 || tfX + 100 === 700) {
     tfSpeedX = -tfSpeedX;
   }
-
   
   tfX += tfSpeedX;
 }
@@ -284,28 +285,29 @@ function vaderCollision (){
       spriteY + 50 >= vaderY &&
      spriteX <= vaderX + 50 &&
      spriteY <= vaderY + 50){
-      vaderWidth = 50;
-      vaderHeight = 50;
-      vaderX = 0;
-      vaderY = 0;
+       vaderX = 0;
   }
 }
 
-function ctCollision (){
-  if (spriteX + 50 >= ctX  &&
-      spriteY + 50 >= ctY &&
-     spriteX <= ctX + 50 &&
-     spriteY <= ctY + 50){
-       ctX = 0;
+function ctCollision() {
+  if (
+    spriteX + 50 >= ctX &&
+    spriteY + 50 >= ctY &&
+    spriteX <= ctX + 50 &&
+    spriteY <= ctY + 50
+  ) {
+    ctX = 0;
   }
 }
 
-function bfCollision (){
-  if (spriteX + 50 >= bfX  &&
-      spriteY + 50 >= bfY &&
-     spriteX <= bfX + 50 &&
-     spriteY <= bfY + 50){
-       bfX = 0;
+function bfCollision() {
+  if (
+    spriteX + 50 >= bfX &&
+    spriteY + 50 >= bfY &&
+    spriteX <= bfX + 50 &&
+    spriteY <= bfY + 50
+  ) {
+    bfX = 0;
   }
 }
 
@@ -395,8 +397,22 @@ function updateLives() {
 }
 
 function gameOver() {
-  // Logic could really be anything... a modal with GAME OVER? or YOU HAVE LOST?
-  // Or something more Star Wars related?
+  // Alert/Modal = Game Over
+  gameOverModal.style.display = 'block';
+  // Button - Retry = Start
+  restartButton.addEventListener('click', restartGame);
 }
 
-animate();
+function restartGame() {
+  // Variables need to be reset(?)
+
+  // This hides the gameOver() modal
+  modal.style.display = 'none';
+
+  // Start the game again - not sure how to target this at the moment
+  // Perhaps animate() needs to be called again?
+}
+
+// Have the start button call the animate() function to start the game //
+
+document.getElementById("start-button").addEventListener("click", animate)
