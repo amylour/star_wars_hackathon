@@ -68,6 +68,15 @@ function dismissMessage(event) {
   }
 }
 
+// Make start button and timer appear after play button is pressed on start modal //
+
+document.getElementById("close-button").addEventListener("click", playButton)
+
+function playButton(event) {
+  document.getElementById("timer").style.opacity = ("100")
+  document.getElementById("start-button").style.opacity = ("100")
+}
+
 // Game functionality //
 
 const canvas = document.getElementById("game-canvas");
