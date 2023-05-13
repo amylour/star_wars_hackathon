@@ -515,6 +515,10 @@ function removeLifeIcon() {
   if (lifeIcons.length > 0) {
     lifeContainer.removeChild(lifeIcons[lifeIcons.length - 1]);
   }
+  if (lifeIcons.length <= 0) {
+    gameOver();
+    // If lives end up at 0, gameOver function called (still not created)
+  }
 }
 
 // Call the createLifeIcons() function to initialize the life icons
@@ -545,10 +549,11 @@ function updateLives() {
 }
 
 function gameOver() {
-  // Alert/Modal = Game Over
-  gameOverModal.style.display = 'block';
-  // Button - Retry = Start
-  restartButton.addEventListener('click', restartGame);
+  // // Alert/Modal = Game Over
+  // gameOverModal.style.display = 'block';
+  // // Button - Retry = Start
+  // restartButton.addEventListener('click', restartGame);
+  alert("You're a poohead!")
 }
 
 function restartGame() {
