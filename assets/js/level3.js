@@ -328,6 +328,7 @@ window.addEventListener("load", function () {
        spriteX <= vaderX + 50 &&
        spriteY <= vaderY + 54){
          vaderX = 400;
+         vaderY = 260; 
          removeLifeIcon();
        }
   }
@@ -337,8 +338,8 @@ window.addEventListener("load", function () {
         spriteY + 13 >= vader2Y &&
        spriteX <= vader2X + 50 &&
        spriteY <= vader2Y + 54){
-         vader2X = 400;
-         vader2Y = 300;
+         vader2X = 700;
+         vader2Y = 350;
          removeLifeIcon();
        }
   }
