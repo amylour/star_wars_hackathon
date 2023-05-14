@@ -515,6 +515,10 @@ function updatePointsDisplay() {
 };
 
 function createLifeIcons() {
+  if (lifeContainer.children.length >= 3) {
+    return; 
+  }
+  
   for (let i = 0; i < lives; i++) {
     const lifeIcon = document.createElement('div');
     lifeIcon.classList.add('life-icon');
