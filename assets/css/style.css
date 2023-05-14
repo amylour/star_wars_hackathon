@@ -53,6 +53,10 @@ body {
   overflow: hidden;
 }
 
+p {
+  font-family: 'Noto Sans Display', sans-serif;
+}
+
 /* Hide start button and timer for DOM load */
 
 #start-button {
@@ -103,6 +107,7 @@ body {
   font-size: 18px;
   display: inline-block;
   cursor: pointer;
+  font-family: 'Noto Sans Display', sans-serif;
 }
 
 
@@ -233,6 +238,7 @@ body {
   left: 200px;
   font-size: 40px;
   color: #bfa300;
+  font-family: 'Noto Sans Display', sans-serif;
 }
 
 #pointsCount {
@@ -274,7 +280,7 @@ body {
 .timer {
   position: absolute;
   top: 100px;
-  right: 550px;
+  right: 460px;
   display: inline-block;
   padding: 10px 15px;
   background-color: #666666;
@@ -337,6 +343,7 @@ footer {
   border-bottom: 15px solid black;
   margin: 0;
   background-color: black;
+  font-family: 'Noto Sans Display', sans-serif;
 }
 
 #footer-right {
@@ -349,6 +356,7 @@ footer {
   border-bottom: 15px solid black;
   margin: 0;
   background-color: black;
+  font-family: 'Noto Sans Display', sans-serif;
 }
 
 
@@ -357,6 +365,7 @@ footer>ul>li {
   color: yellow;
   padding-left: 5px;
   padding-right: 5px;
+  font-family: 'Noto Sans Display', sans-serif;
 }
 
 footer>ul>li>a {
@@ -376,7 +385,8 @@ footer>ul>li>a {
 }
 
 #sound-text {
-  color: yellow;
+  color: #bfa300;
+  font-weight: 600;
   width: 80px;
   text-align: center;
 }
