@@ -81,6 +81,8 @@ p {
 .title-container img {
   max-width: 100%;
   height: auto;
+  height: 220px;
+  width: 440px;
 }
 
 /* Start modal */
