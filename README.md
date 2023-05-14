@@ -228,5 +228,13 @@ This end screen reveals when the game overs. In this screen a button is added th
 
 ## **Credits**
 
+### **Media**
+
+Any media acknowledgment here
+
+### **Acknowledgments**
+
+This project was created in collaboration by [Burgundy Lightsaber](https://hackathon.codeinstitute.net/teams/314/): Amy, Chris, Jacob, Jamie, Keiron, Saleha, Shaun
+
 
 
