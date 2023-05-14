@@ -82,7 +82,6 @@ Our target audience is a range of absolutely any person that can use a computer,
 
 * As a **first-time user**, I want **to have a set number of lives depicted by Yoda icons, which depreciate each time I make a mistake**.
 
-* As a **user**, I want **to have opportunities to gain rewards during the game play, such as an extra life or bonus points for difficult to complete challenges**.
 
 * As a **returning user**, I want **the game play to have a high level of replayability**.
 
