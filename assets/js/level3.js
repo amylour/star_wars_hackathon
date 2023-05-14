@@ -508,7 +508,7 @@ window.addEventListener("load", function () {
   function updatePointsDisplay() {
     const pointsDisplay = document.getElementById("pointsCount");
     pointsDisplay.textContent = points;
-    if (points >= 100) {
+    if (points >= 150) {
       gameWon();
     }
   };
