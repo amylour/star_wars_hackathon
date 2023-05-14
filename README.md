@@ -216,6 +216,17 @@ This end screen reveals when the game overs. In this screen a button is added th
 
 ## **Bugs**
 
+### **Fixed bugs**
+
+To find a list of fixed bugs that were mended during development, please click [here](https://github.com/amylour/star_wars_hackathon/pulls?q=is%3Apr+is%3Aclosed+label%3Abug).
+
+### **Remaining bugs**
+
+* Depending on where the lightsaber sprite + vader sprite spawn, if they by chance spawn in the exact same spot, the gameOver() function will be called until they move away, creating a pseudo-loop.
+
+* The Start button when pressed continuously speeds up the sprite and player movement.
+
+
 ## **Validator Testing**
 
 <hr>
