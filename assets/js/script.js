@@ -116,8 +116,6 @@ let vaderSpeedX = 3;
 let vaderSpeedY = 3;
 let ctSpeedX = 3;
 let ctSpeedY = 3;
-//let bfSpeedX = 1;
-//let bfSpeedY = 1;
 let tfSpeedX = 1;
 let tfSpeedY = 1;
 
@@ -140,9 +138,6 @@ darthImage.src = "assets/media/vader_helmet.png";
 const ctImage = new Image();
 ctImage.src = "assets/media/clone_trooper.png";
 
-/*const bfImage = new Image();
-bfImage.src = "assets/media/bf_helmet.png"; */ 
-
 const tieFighter = new Image();
 tieFighter.src = "assets/media/tief.png";
 
@@ -159,29 +154,22 @@ function animate(event) {
   ctx.drawImage(playerImage, spriteX, spriteY, 100, 13);
   ctx.drawImage(darthImage, vaderX, vaderY, vaderWidth, vaderHeight);
   ctx.drawImage(ctImage, ctX, ctY, 54, 50);
-  //ctx.drawImage(bfImage, bfX, bfY, 54, 50);
   ctx.drawImage(tieFighter, tfX, tfY, 100, 100);
   gameFrame++;
   inputs();
   boundryCollision();
   vaderBoundryCol();
   ctBoundryCol();
-  //bfBoundryCol();
   tfBoundryCol();
   vaderMove();
   ctMove();
-  //bfMove();
   tfMove();
   vaderCollision();
   ctCollision();
-  //bfCollision();
   tfCollision();
   vaderCtCollision();
-  //vaderbfCollision();
- // ctbfCollision();
   vaderTfCollision();
   ctTfCollision();
- // bfTfCollision();
   requestAnimationFrame(animate);
 }
 
@@ -238,21 +226,6 @@ function ctBoundryCol() {
   }
 }
 
-/*function bfBoundryCol() {
-  if (bfX <= 0) {
-    bfX = 0;
-  }
-  if (bfX >= 700) {
-    bfX = 700;
-  }
-
-  if (bfY <= 0) {
-    bfY = 0;
-  }
-  if (bfY >= 320) {
-    bfY = 320;
-  }
-}*/
 
 function tfBoundryCol() {
   if (tfX <= 0) {
@@ -296,18 +269,6 @@ function ctMove() {
   ctX += ctSpeedX;
 }
 
-/*function bfMove() {
-  if (bfY === 0 || bfY + 80 === 400) {
-    bfSpeedY = -bfSpeedY;
-  }
-
-  if (bfX === 0 || bfX + 80 === 700) {
-    bfSpeedX = -bfSpeedX;
-  }
-
-  bfY += bfSpeedY;
-  bfX += bfSpeedX;
-}*/
 
 function tfMove(){
   if (tfX === 0 || tfX + 100 === 700) {
@@ -341,16 +302,6 @@ function ctCollision() {
    }
 }
 
-/*function bfCollision() {
-  if (
-    spriteX + 50 >= bfX &&
-    spriteY + 50 >= bfY &&
-    spriteX <= bfX + 50 &&
-    spriteY <= bfY + 50
-  ) {
-    bfX = 0;
-  }
-}*/
 
 function tfCollision (){
   if (spriteX + 100 >= tfX  &&
@@ -375,35 +326,6 @@ function vaderCtCollision(){
     }
 }
 
-/*function vaderbfCollision(){
-  if (
-    vaderX + 50 >= bfX &&
-    vaderY + 50 >= bfY &&
-    vaderX <= bfX + 50 &&
-    vaderY <= bfY + 50
-  ) {
-   vaderX = 0;
-   vaderY = 0;
-   bfY = 0;
-   bfX = 700;
-
-  }
-}*/
-
-/*function ctbfCollision(){
-  if (
-    ctX + 50 >= bfX &&
-    ctY + 50 >= bfY &&
-    ctX <= bfX + 50 &&
-    ctY <= bfY + 50
-  ) {
-   ctX = 0;
-   ctY = 100;
-   bfY = 0;
-   bfX = 700;
-
-  }
-}*/
 
 function vaderTfCollision(){
   if (
