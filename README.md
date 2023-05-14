@@ -146,6 +146,10 @@ The fonts that we used were 'Noto Sans Display' from [Google Fonts](https://www.
 
 ### **Music & Sounds**
 
+The music for game was created using a combination of Rytmik Studio and Rytmik Ultimate. As the art was inspired by a Gameboy Advanced game, it made a lot of sense to keep the retro theme for the music too. So a chiptune style was chosen to match it.
+
+The full song can be found [here](https://soundcloud.com/welshynatorjones/saber-scroll-theme).
+
 ### **Wireframes**
 Some basic wireframes were created so the team could be on the same page when creating the layout during coding sessions.
 
