@@ -40,9 +40,11 @@ Based on the Code Institute Hackathon May 2023 Theme of "May the 4th be with you
 
 ## **User Experience**
 
+
 This game offers a level-based gaming experience. Players can progress onto the next level in the Star Wars universe by accumulating a set amount of points for each level. Several things can be expected from the game:
 
-* **Star Wars Pop-Culture references:** Throughout the game, various pop-culture references can be understood by the user if they are a Star Wars fans. The use of lightsabers, clones, Darth Vader helmets as sprites, as well as the beautifully made retro backgrounds are a few examples of these references.
+
+* **Star Wars Pop-Culture references:** Throughout the game, various pop-culture references can be understood by the user if they are a Star Wars fans. The use of lightsabers, Clones, Darth Vader helmets as sprites, as well as the beautifully made retro backgrounds are a few examples of these references.
 
 * **Controls:** The user is able to use the arrow keypad to move their lightsaber sprite and make smart, calculated decisions about where to move around the environment.
 
@@ -50,8 +52,9 @@ This game offers a level-based gaming experience. Players can progress onto the 
 
 * **Retro Environment:** Our team specifically chose to develop graphic designs based around a retro-themed environment. All the sprites, backgrounds, items, health containers and general features have been made in an attempt to give a "retro" feel to the application.
 
-* **Immersive Sound:** Retro audio has been caringly added to the gaming environment so match the retro environment and immerse the player into their gaming experience.
+* **Immersive Sound:** Original retro audio has been caringly added to the gaming environment to match the retro environment and immerse the player into their gaming experience.
 
+<hr>
 
 ## **Target Audience**
 
@@ -59,6 +62,7 @@ Our target audience is a range of absolutely any person that can use a computer,
 
 
 ## **User Stories**
+  
 
 #### **First time user**
 
@@ -74,23 +78,18 @@ Our target audience is a range of absolutely any person that can use a computer,
 
 #### **Game Play**
 
-* As a **first-time and returning-user**, I want **to be able to customise my character's lightsaber before starting the game**.
+* As a **first-time user**, I want **to be able to control my character's movement using the arrow keys**.
 
-* As a **first-time**, I want **to be able to control my character's movement using the arrow keys and actions using the space-bar**.
+* As a **first-time user**, I want **to progress through the game accumulating the highest score possible with increasing difficulty** so that I **feel challenged and engaged**.
 
-* As a **first-time**, I want **to progress through the game accumulating the highest score possible with increasing difficulty** so that I **feel challenged and engaged**.
-
-* As a **first-time**, I want **to have a set number of lives depicted by Yoda icons, which depreciate each time I make a mistake**.
+* As a **first-time user**, I want **to have a set number of lives depicted by Yoda icons, which depreciate each time I make a mistake**.
 
 * As a **user**, I want **to have opportunities to gain rewards during the game play, such as an extra life or bonus points for difficult to complete challenges**.
 
 * As a **returning user**, I want **the game play to have a high level of replayability**.
 
-* As a **returning user**, I want **the game to have multiplayer functionalities, such as competing for high scores with an interactive leaderboard or engaging in a local connection**.
 
 #### **Developer**
-
-* As a **developer**, I want **the game to be responsive and smooth to users' interactions on multiple devices (mobile and desktop)**.
 
 * As a **developer**, I want **to ensure that the game's graphics and sound effects are immersive and engaging**.
 
@@ -101,31 +100,41 @@ Our target audience is a range of absolutely any person that can use a computer,
 
 #### **_Components_**
 
-The components of this project were inspired by classic pixel art and were painted in Procreate. 
+The components of this project were inspired by classic pixel art and were painted in Procreate. The artwork was resized to be appropriate for the size of the game playing area and as to not present too much of a challenge to the player.
 
 ![screenshot of lightsabers](documentation/lightsabers.png)<br>
 _Lightsabers_
   
+A selection of lightsabers were produced with the intention of producing a feature of allowing the user to select their favourite one to play with. In the interests of project completion to MVP level, and the short time frame (5 days), this feature will be included in a future version of the game.
+
 <br>  
 
 ![screenshot baddies](documentation/baddies.png)<br>
 _Baddies_
   
+A selection of characters, who align with the Dark side, were created in pixel sprite form. The Clone Trooper's helmet provides a points option for the player if they successfully navigate their way through the dangers. 10 points are awarded for each succesful contact made.
+
+We are excited to include the rest of these characters with the future development of the game.
+
 <br>
 
 ![screenshot snacks](documentation/snacks.png)<br>
 _Snacks & Extra Lives_
 
+A future feature that we discussed, will be to include 'snacks' that will provide power-ups to the player, to help them in their journey.
+
 <br>
 
 ![screenshot lives](documentation/lives.png)<br>
-_Lives_
+_Yoda Lives_
+
+Yoda heads represent the lives at stake if the player is confronted by Darth Vader or a Tie Fighter. Every time Darth touches them, the player loses a life. Lose three lives, lose the game!
 
 <br>
 
 #### **_Level Backgrounds_**
 
-The backgrounds for this project were painted in Procreate. They have been inspired by classic pixel art and the Game Boy Advance game [Star Wars: Episode III - Revenge of the Sith](https://en.wikipedia.org/wiki/Star_Wars:_Episode_III_%E2%80%93_Revenge_of_the_Sith_(video_game))
+The backgrounds for this project were painted in Procreate. They have been inspired by classic pixel art and the Game Boy Advance game [Star Wars: Episode III - Revenge of the Sith](https://en.wikipedia.org/wiki/Star_Wars:_Episode_III_%E2%80%93_Revenge_of_the_Sith_(video_game)). It was imporatnt to us to create original assets through graphics and sounds to help us to stand out, and to create an engaging and considered user experience.
 
 ![level 1 - Death Star](documentation/game-bg.png)<br>
 _Level 1 - Death Star_
@@ -140,24 +149,37 @@ _Level 3 - Mustafar_
 
 ### **Colour**
 
+Colour has been chosen level by level to create an immersive player experience. Traditional C3PO gold is used for the buttons, timer, game area frame and points counter. Bright yellow is used with a chromatic aberration effect and Star Wars font for the main title.
+
+![main title](documentation/sw_title.png)<br>
+_Main title_
+
+A starry pixel background has been created with expansive black spaces to make the user feel like they are in space.
+
+<details>
+<summary>Click arrow for starry space background experience</summary>
+
+![Starry space background](documentation/sw_bg_big.png)
+</details>
+
+<br>
+
 ### **Fonts**
 
-The fonts that we used were 'Noto Sans Display' from [Google Fonts](https://www.googlefonts.com) for the body text and 'SF Distant Galaxy' from [DaFont](https://www.dafont.com/sf-distant-galaxy.font)
+The fonts that we used were 'Noto Sans Display' from [Google Fonts](https://www.googlefonts.com) for the body text and 'SF Distant Galaxy' from [DaFont](https://www.dafont.com/sf-distant-galaxy.font) for the title.
 
 ### **Music & Sounds**
 
-The music for game was created using a combination of Rytmik Studio and Rytmik Ultimate. As the art was inspired by a Gameboy Advanced game, it made a lot of sense to keep the retro theme for the music too. So a chiptune style was chosen to match it. We added more to the soundtrack when more levels were created.
+The music for the game was created using a combination of Rytmik Studio and Rytmik Ultimate. As the art was inspired by a Gameboy Advanced game, it made a lot of sense to keep the retro theme for the music too. So a chiptune style was chosen to match it. We added more to the soundtrack when more levels were created.
 
 The full OST can be found [here](https://soundcloud.com/welshynatorjones/sets/saber-scroll-ost).
+  
 
 ### **Wireframes**
 Some basic wireframes were created so the team could be on the same page when creating the layout during coding sessions.
 
 ### **Landing page - Landscape**
 ![Base Page Landscape](documentation/base-screen.png)
-
-### **Landing page - Portrait**
-![Base Page Portrait](documentation/base-mobile.png)
 
 ### **In Game Screen**
 ![In Game](documentation/in-game.png)
@@ -173,6 +195,7 @@ Some basic wireframes were created so the team could be on the same page when cr
 ## **Technologies, Languages & Programs Used** 
 
 - HTML, CSS + JavaScript 
+
 - Procreate - used to create the Star Wars artwork and edit images .
 - Rytmik Studio & Ultimate - used to create the music.
 - GitHub - used to save and store all files for this website  .
@@ -199,7 +222,7 @@ This game includes three pages (levels), each with a:
 
 ### Start Modal
 
-This is the first page that appears on the top of the screen. The Saber Scroll image is added and then the welcome message with the rules of this Game (note the rules change for each level). There is a button that enables user to start playing the game.
+This is the first page that appears on the top of the screen. The Saber Scroll image is added and then the welcome message with the rules of this Game (note the rules change for each level). Instructions for the user to play using the keyboard arrows are shown. There is a button that enables a user to start playing the game. 
 
 - Level 1 start modal screen
 ![Level 1 start modal screen](readme-assets/start-modal-lv1-fullscreen.png)
@@ -218,7 +241,7 @@ This page also includes footer. On the left side of the page, copyright deatils 
 
 ### End Modal
 
-This end screen reveals when the player has lost all their lives and the game is over. In this screen a button is added that if the user wanted to play the game again they can start playing again simply by clicking the play again button.
+This end screen reveals when the player has lost all their lives and the game is over. In this screen a button is added that if the user wanted to play the game again they can start playing again simply by clicking the try again button.
 
 - End Modal 
 
@@ -226,7 +249,7 @@ This end screen reveals when the player has lost all their lives and the game is
 
 ### Win Modal
 
-This win screen reveals when the game overs. In this screen a button is added and it's functionailty depends on the level. For level one and two, the user can click the button to progress to the next level. For level three the button allows the user to restart the game from the beginning.
+This win screen reveals when the game is over. In this screen a button is added and it's functionailty depends on the level. For level one and two, the user can click the button to progress to the next level. For level three the button allows the user to restart the game from the beginning.
 
 - Level 1 win modal screen
 ![Win Modal](readme-assets/level-one-win-modal-fullscreen.png)
@@ -257,6 +280,8 @@ To find a list of fixed bugs that were mended during development, please click [
 * Depending on where the lightsaber sprite + vader sprite spawn, if they by chance spawn in the exact same spot, the gameOver() function will be called until they move away, creating a pseudo-loop.
 
 * The Start button when pressed continuously speeds up the sprite and player movement.
+
+* After the mute/unmute button is clicked, the user can control the slider's movement using the spacebar. 
 
 
 ## **Validator Testing**
@@ -291,7 +316,7 @@ For local deployments instructions shall be written below, along with instructio
 This repository can be cloned and run locally with the following steps:
 
 * Login to GitHub.
-* Select repository named: IuliiaKonovalova/revolutionising-finance-hackathon.
+* Select repository named: amylour/star_wars_hackathon.
 * Click code toggle button and copy the url (i.e., https://amylour.github.io/star_wars_hackathon/).
 * In your IDE, open terminal and run the git clone command (i.e., git clone https://amylour.github.io/star_wars_hackathon/). The repository will now be cloned in your workspace.
 
@@ -314,7 +339,7 @@ The procedure for deployment followed the "Creating your site" steps provided in
 
 ### **Media**
 
-Any media acknowledgment here
+As mentioned in the Design section, all assets, graphic and audio, were created as original materials. Inspiration from the referenced Star Wars Game Boy Advanced game was researched using Google Images.
 
 ### **Acknowledgments**
 
