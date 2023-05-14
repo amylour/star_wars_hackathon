@@ -101,8 +101,8 @@ let gameFrame = 0;
 const staggerFrames = 5;
 let spriteX = 0;
 let spriteY = 300;
-let vaderX = 0;
-let vaderY = 0;
+let vaderX = 400;
+let vaderY = 200;
 let vaderWidth = 50;
 let vaderHeight = 54;
 let ctX = 100;
@@ -340,12 +340,7 @@ function ctCollision() {
     spriteX = 0;
     points += 10;
     updatePointsDisplay();
-    if(ctSpeedX == 8 && ctSpeedY == 8){
-      ctSpeedX = 8;
-      ctSpeedY = 8;
-    }
-    points += 10;
-    updatePointsDisplay();
+   
   }
 }
 
