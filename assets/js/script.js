@@ -324,9 +324,7 @@ function vaderCollision (){
      spriteY <= vaderY + 54){
        vaderX = 400;
        removeLifeIcon();
-  
-          
-  }
+     }
 }
 
 function ctCollision() {
@@ -340,8 +338,7 @@ function ctCollision() {
     spriteX = 0;
     points += 10;
     updatePointsDisplay();
-   
-  }
+   }
 }
 
 /*function bfCollision() {
