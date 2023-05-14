@@ -105,6 +105,10 @@ window.addEventListener("load", function () {
   let vaderY = 350;
   let vaderWidth = 50;
   let vaderHeight = 54;
+  let vader2X = 280;
+  let vader2Y = 350;
+  let vader2Width = 50;
+  let vader2Height = 54;
   let ctX = 100;
   let ctY = 300;
   let bfX = 550;
@@ -114,10 +118,10 @@ window.addEventListener("load", function () {
   let speed = 5;
   let vaderSpeedX = 3;
   let vaderSpeedY = 3;
+  let vader2SpeedX = 5;
+  let vader2SpeedY = 5;
   let ctSpeedX = 3;
   let ctSpeedY = 3;
-  //let bfSpeedX = 1;
-  //let bfSpeedY = 1;
   let tfSpeedX = 4;
   let tfSpeedY = 4;
   
@@ -140,8 +144,8 @@ window.addEventListener("load", function () {
   const ctImage = new Image();
   ctImage.src = "assets/media/clone_trooper.png";
   
-  /*const bfImage = new Image();
-  bfImage.src = "assets/media/bf_helmet.png"; */ 
+  const darth2Image = new Image();
+  darth2Image.src = "assets/media/vader_helmet.png"; 
   
   const tieFighter = new Image();
   tieFighter.src = "assets/media/tief.png";
@@ -159,29 +163,29 @@ window.addEventListener("load", function () {
     ctx.drawImage(playerImage, spriteX, spriteY, 100, 13);
     ctx.drawImage(darthImage, vaderX, vaderY, vaderWidth, vaderHeight);
     ctx.drawImage(ctImage, ctX, ctY, 54, 50);
-    //ctx.drawImage(bfImage, bfX, bfY, 54, 50);
+    ctx.drawImage(darth2Image, vader2X, vader2Y, vader2Width, vader2Height);
     ctx.drawImage(tieFighter, tfX, tfY, 100, 100);
     gameFrame++;
     inputs();
     boundryCollision();
     vaderBoundryCol();
     ctBoundryCol();
-    //bfBoundryCol();
+    vader2BoundryCol();
     tfBoundryCol();
     vaderMove();
     ctMove();
-    //bfMove();
+    vader2Move();
     tfMove();
     vaderCollision();
     ctCollision();
-    //bfCollision();
+    vader2Collision();
     tfCollision();
     vaderCtCollision();
-    //vaderbfCollision();
-   // ctbfCollision();
+    vaderVader2Collision();
+    ctVader2Collision();
     vaderTfCollision();
     ctTfCollision();
-   // bfTfCollision();
+    vader2TfCollision();
     requestAnimationFrame(animate);
   }
   
@@ -220,6 +224,22 @@ window.addEventListener("load", function () {
       vaderY = 320;
     }
   }
+
+  function vader2BoundryCol(){
+    if (vader2X <= 0) {
+      vader2X = 0;
+    }
+    if (vader2X >= 700) {
+      vader2X = 700;
+    }
+  
+    if (vader2Y <= 0) {
+      vader2Y = 0;
+    }
+    if (vader2Y >= 320) {
+      vader2Y = 320;
+    }
+  }
   
   function ctBoundryCol() {
     if (ctX <= 0) {
@@ -238,21 +258,6 @@ window.addEventListener("load", function () {
     }
   }
   
-  /*function bfBoundryCol() {
-    if (bfX <= 0) {
-      bfX = 0;
-    }
-    if (bfX >= 700) {
-      bfX = 700;
-    }
-  
-    if (bfY <= 0) {
-      bfY = 0;
-    }
-    if (bfY >= 320) {
-      bfY = 320;
-    }
-  }*/
   
   function tfBoundryCol() {
     if (tfX <= 0) {
@@ -282,6 +287,19 @@ window.addEventListener("load", function () {
     vaderY += vaderSpeedY;
     vaderX += vaderSpeedX;
   }
+
+  function vader2Move() {
+    if (vader2Y === 0 || vader2Y + 80 === 400) {
+      vader2SpeedY = -vader2SpeedY;
+    }
+  
+    if (vader2X === 0 || vader2X + 80 === 700) {
+      vader2SpeedX = -vader2SpeedX;
+    }
+  
+    vader2Y += vader2SpeedY;
+    vader2X += vader2SpeedX;
+  }
   
   function ctMove() {
     if (ctY === 0 || ctY + 80 === 400) {
@@ -295,19 +313,6 @@ window.addEventListener("load", function () {
     ctY += ctSpeedY;
     ctX += ctSpeedX;
   }
-  
-  /*function bfMove() {
-    if (bfY === 0 || bfY + 80 === 400) {
-      bfSpeedY = -bfSpeedY;
-    }
-  
-    if (bfX === 0 || bfX + 80 === 700) {
-      bfSpeedX = -bfSpeedX;
-    }
-  
-    bfY += bfSpeedY;
-    bfX += bfSpeedX;
-  }*/
   
   function tfMove(){
     if (tfY === 0 || tfY + 80 === 400) {
@@ -326,6 +331,17 @@ window.addEventListener("load", function () {
          removeLifeIcon();
        }
   }
+
+  function vader2Collision (){
+    if (spriteX + 100 >= vader2X  &&
+        spriteY + 13 >= vader2Y &&
+       spriteX <= vader2X + 50 &&
+       spriteY <= vader2Y + 54){
+         vader2X = 400;
+         vader2Y = 300;
+         removeLifeIcon();
+       }
+  }
   
   function ctCollision() {
     if (
@@ -341,16 +357,6 @@ window.addEventListener("load", function () {
      }
   }
   
-  /*function bfCollision() {
-    if (
-      spriteX + 50 >= bfX &&
-      spriteY + 50 >= bfY &&
-      spriteX <= bfX + 50 &&
-      spriteY <= bfY + 50
-    ) {
-      bfX = 0;
-    }
-  }*/
   
   function tfCollision (){
     if (spriteX + 100 >= tfX  &&
@@ -375,35 +381,35 @@ window.addEventListener("load", function () {
       }
   }
   
-  /*function vaderbfCollision(){
+  function vaderVader2Collision(){
     if (
-      vaderX + 50 >= bfX &&
-      vaderY + 50 >= bfY &&
-      vaderX <= bfX + 50 &&
-      vaderY <= bfY + 50
+      vaderX + 50 >= vader2X &&
+      vaderY + 50 >= vader2Y &&
+      vaderX <= vader2X + 50 &&
+      vaderY <= vader2Y + 50
     ) {
      vaderX = 0;
      vaderY = 0;
-     bfY = 0;
-     bfX = 700;
+     vader2Y = 0;
+     vader2X = 700;
   
     }
-  }*/
+  }
   
-  /*function ctbfCollision(){
+  function ctVader2Collision(){
     if (
-      ctX + 50 >= bfX &&
-      ctY + 50 >= bfY &&
-      ctX <= bfX + 50 &&
-      ctY <= bfY + 50
+      ctX + 50 >= vader2X &&
+      ctY + 50 >= vader2Y &&
+      ctX <= vader2X + 50 &&
+      ctY <= vader2Y + 50
     ) {
      ctX = 0;
      ctY = 100;
-     bfY = 0;
-     bfX = 700;
+     vader2Y = 0;
+     vader2X = 700;
   
     }
-  }*/
+  }
   
   function vaderTfCollision(){
     if (
@@ -414,6 +420,19 @@ window.addEventListener("load", function () {
     ) {
      vaderX = 0;
      vaderY = 100;
+  
+    }
+  }
+
+  function vader2TfCollision(){
+    if (
+      vader2X + 50 >= tfX &&
+      vader2Y + 50 >= tfY &&
+      vader2X <= tfX + 50 &&
+      vader2Y <= tfY + 50
+    ) {
+     vader2X = 100;
+     vader2Y = 100;
   
     }
   }
@@ -431,18 +450,6 @@ window.addEventListener("load", function () {
     }
   }
   
-  function bfTfCollision(){
-    if (
-      bfX + 50 >= tfX &&
-      bfY + 50 >= tfY &&
-      bfX <= tfX + 50 &&
-      bfY <= tfY + 50
-    ) {
-     bfX = 0;
-     bfY = 100;
-  
-    }
-  }
   document.body.addEventListener("keydown", keyDown);
   document.body.addEventListener("keyup", keyUp);
   
