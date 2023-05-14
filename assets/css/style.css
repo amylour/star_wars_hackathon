@@ -258,6 +258,32 @@ p {
   background-size: cover;
 }
 
+#game-canvas-2 {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-style: solid;
+  border-width: 10px;
+  border-image: linear-gradient(to bottom, #fcd477, #976f00) 30 30;
+  background-image: url("../media/endor.png");
+  background-size: cover;
+}
+
+#game-canvas-3 {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-style: solid;
+  border-width: 10px;
+  border-image: linear-gradient(to bottom, #fcd477, #976f00) 30 30;
+  background-image: url("../media/mustafar_bg.png");
+  background-size: cover;
+}
+
 #game-container::before {
   content: "";
   position: absolute;
