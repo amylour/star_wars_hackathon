@@ -509,7 +509,7 @@ function keyUp(event) {
 function updatePointsDisplay() {
   const pointsDisplay = document.getElementById("pointsCount");
   pointsDisplay.textContent = points;
-  if (points >= 20) {
+  if (points >= 100) {
     gameWon();
   }
 };
@@ -518,7 +518,7 @@ function createLifeIcons() {
   if (lifeContainer.children.length >= 3) {
     return; 
   }
-  
+
   for (let i = 0; i < lives; i++) {
     const lifeIcon = document.createElement('div');
     lifeIcon.classList.add('life-icon');
