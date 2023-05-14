@@ -415,6 +415,13 @@ footer > ul > li > a {
 
 /* The sound container positioning */
 
+.audio-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 #sound-container {
   display: flex;
   justify-content: center;
@@ -422,12 +429,29 @@ footer > ul > li > a {
   padding-top: 20px;
 }
 
-#sound-text {
+/* #sound-text {
   color: #bfa300;
   font-weight: 600;
   width: 80px;
   text-align: center;
+  font-family: 'Noto Sans Display', sans-serif;
+} */
+
+.mute-unmute-container {
+  display: flex;
+  justify-content: center;
 }
+
+.mute-unmute {
+  display: flex;
+  justify-content: center;
+  color: #bfa300;
+  font-weight: 600;
+  width: 80px;
+  text-align: center;
+  font-family: 'Noto Sans Display', sans-serif;
+}
+
 
 /* The switch - the box around the slider */
 
@@ -436,7 +460,7 @@ footer > ul > li > a {
   display: inline-block;
   width: 80px;
   height: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 /* Hide default HTML checkbox */
