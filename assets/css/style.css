@@ -258,7 +258,7 @@ p {
   background-size: cover;
 }
 
-#game-canvas-2 {
+#game-container-2 {
   position: relative;
   width: 800px;
   height: 400px;
@@ -271,7 +271,7 @@ p {
   background-size: cover;
 }
 
-#game-canvas-3 {
+#game-container-3 {
   position: relative;
   width: 800px;
   height: 400px;
