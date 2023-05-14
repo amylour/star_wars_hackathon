@@ -118,8 +118,8 @@ window.addEventListener("load", function () {
   let ctSpeedY = 3;
   //let bfSpeedX = 1;
   //let bfSpeedY = 1;
-  let tfSpeedX = 1;
-  let tfSpeedY = 1;
+  let tfSpeedX = 4;
+  let tfSpeedY = 4;
   
   let upPressed = false;
   let downPressed = false;
