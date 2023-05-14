@@ -74,17 +74,22 @@
 
     <!-- Audio Tab -->
 
-    <div id="sound-container">
-      <label class="switch">
-        <input type="checkbox" />
-        <span id="sound-slider" class="slider round"></span>
-      </label>
-      <audio
-        id="music-player"
-        src="assets/sound/saber-scroll-music.mp3"
-        loop
-        preload="auto"
-      ></audio>
+    <div class="audio-tab">
+      <div id="sound-container">
+        <label class="switch">
+          <input type="checkbox" />
+          <span id="sound-slider" class="slider round"></span>
+        </label>
+        <audio
+          id="music-player"
+          src="assets/sound/saber-scroll-music.mp3"
+          loop
+          preload="auto"
+        ></audio>
+      </div>
+      <div class="mute-unmute-container">
+        <div class="mute-unmute">Mute/Unmute</div>
+      </div>
     </div>
 
     <!-- Start Button -->
