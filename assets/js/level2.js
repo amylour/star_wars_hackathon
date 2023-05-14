@@ -323,6 +323,7 @@ window.addEventListener("load", function () {
        spriteX <= vaderX + 50 &&
        spriteY <= vaderY + 54){
          vaderX = 400;
+         spriteX = 0;
          removeLifeIcon();
        }
   }
