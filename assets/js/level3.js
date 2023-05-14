@@ -105,7 +105,7 @@ window.addEventListener("load", function () {
   let vaderY = 350;
   let vaderWidth = 50;
   let vaderHeight = 54;
-  let vader2X = 280;
+  let vader2X = 500;
   let vader2Y = 350;
   let vader2Width = 50;
   let vader2Height = 54;
@@ -118,8 +118,8 @@ window.addEventListener("load", function () {
   let speed = 5;
   let vaderSpeedX = 3;
   let vaderSpeedY = 3;
-  let vader2SpeedX = 5;
-  let vader2SpeedY = 5;
+  let vader2SpeedX = 3;
+  let vader2SpeedY = 3;
   let ctSpeedX = 3;
   let ctSpeedY = 3;
   let tfSpeedX = 4;
