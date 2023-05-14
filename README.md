@@ -2,7 +2,7 @@
 
 ![landing-page-photo](./documentation/saber%20scroll%20landing%20page%20(2).png)
 
-Wager your Jedi skills with the retro-design game Saber Scroll. Developed by Hackathon Team **Burgundy Lightsaber** during the May 2023 Hackathon.
+Wager your Jedi skills with the retro-designed game Saber Scroll. Developed by Hackathon Team **Burgundy Lightsaber** during the May 2023 Code Institute Hackathon.
 
 Live deployment link can be found [here](https://amylour.github.io/star_wars_hackathon/).
 
@@ -40,7 +40,9 @@ Based on the Code Institute Hackathon May 2023 Theme of "May the 4th be with you
 
 ## **User Experience**
 
-This game offers a level-based gaming experience where players can progress through levels of adventure in the Star Wars universe. Several things can be expected from the game:
+
+This game offers a level-based gaming experience. Players can progress onto the next level in the Star Wars universe by accumulating a set amount of points for each level. Several things can be expected from the game:
+
 
 * **Star Wars Pop-Culture references:** Throughout the game, various pop-culture references can be understood by the user if they are a Star Wars fans. The use of lightsabers, Clones, Darth Vader helmets as sprites, as well as the beautifully made retro backgrounds are a few examples of these references.
 
@@ -72,9 +74,7 @@ Our target audience is a range of absolutely any person that can use a computer,
 
 * As a **first-time user**, I want **to see the rules of the game** so that **I am clear with what I am doing**.
 
-* As a **first-time user**, I want **to be able to control an audit playing** so that I can **be in control of the game**.
-  
-<br>
+* As a **first-time user**, I want **to be able to control the audio playing** so that I can **be in control of the game**.
 
 #### **Game Play**
 
@@ -195,17 +195,18 @@ Some basic wireframes were created so the team could be on the same page when cr
 ## **Technologies, Languages & Programs Used** 
 
 - HTML, CSS + JavaScript 
-- Procreate - used to create the Star Wars artwork and edit images - created by Amy
-- GitHub - used to save and store all files for this website  
-- Git - used for version control
-- Google Fonts - fonts were imported from here 
-- Simple Image Resizer - to resize all artwork
-- Tiny PNG - to compress images 
-- Google Dev Tools - to debug and for testing responsiveness 
-- Google Lighthouse - for auditing the website
-- W3C Validator - for validating the HTML and CSS code 
-- JSHint - for validating JavaScript
-- Rytmik Studio & Rytmik Ultimate - original song production - created by Jacob
+
+- Procreate - used to create the Star Wars artwork and edit images .
+- Rytmik Studio & Ultimate - used to create the music.
+- GitHub - used to save and store all files for this website  .
+- Git - used for version control.
+- Google Fonts - fonts were imported from here.
+- Simple Image Resizer - to resize all artwork.
+- Tiny PNG - to compress images .
+- Google and OperaGX Dev Tools - to debug and for testing responsiveness. 
+- Google Lighthouse - for auditing the website.
+- W3C Validator - for validating the HTML and CSS code .
+- JSHint - for validating JavaScript.
 
 <hr>
 
@@ -230,8 +231,8 @@ This is the first page that appears on the top of the screen. The Saber Scroll i
 
 ### Game Screen
 
-When the user wants to play the game by clicking the play button, the game screen reveals. On the top of the screen the Saber Scroll image is present, with a timer on the right and a live counter in the left. Underneath the game container, there is a mute/unmute button for audio.
-This page also includes a footer. On the left side of the page, copyright details are present and on the right side, links to the developer's GitHub page are added.
+When the user wants to play the game using the play button the game screen reveals. On the top of the screen the Saber Scroll image is present, with a timer on the right and a live counter in the left. Underneath the game container, there is a on/off button for audio.
+This page also includes footer. On the left side of the page, copyright deatils are present and on the right side, links to developer's GitHub page are added.
 
 - Level 1 game screen
 ![Level 1 game screen](readme-assets/level-one-gameplay-fullscreen.png)
@@ -255,6 +256,16 @@ This win screen reveals when the game is over. In this screen a button is added 
 - [Level 2 win modal screen](https://github.com/amylour/star_wars_hackathon/blob/main/readme-assets/level-two-win-modal-fullscreen.png)
 - [Final level win modal screen](https://github.com/amylour/star_wars_hackathon/blob/main/readme-assets/final-level-win-modal-fullscreen.png)
 
+
+### **Future Features**
+
+There are a few features that we would like to add in future to reach some of the user stories. These featues are:
+
+- Local multiplayer, both 'hot seat' and 'co-op'.
+- Attach some retro sound effects to vairous parts of the game.
+- Lightsaber selection at the begining of the game.
+- A more responsive site as well as touch controls so mobile/tablet users can play the game.
+- More levels! More Art! More Music! More Collectables! More Enemies!
 
 ## **Testing**
 
