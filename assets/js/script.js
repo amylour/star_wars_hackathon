@@ -79,11 +79,11 @@ function dismissMessage(event) {
 
 // Make start button and timer appear after play button is pressed on start modal //
 
-document.getElementById("close-button").addEventListener("click", playButton)
+document.getElementById("close-button").addEventListener("click", playButton);
 
 function playButton(event) {
-  document.getElementById("timer").style.opacity = ("100")
-  document.getElementById("start-button").style.opacity = ("100")
+  document.getElementById("timer").style.opacity = "100";
+  document.getElementById("start-button").style.opacity = "100";
 }
 
 // Game functionality //
@@ -126,8 +126,6 @@ let rightPressed = false;
 
 let points = 0;
 let lives = 3;
-
-
 
 const playerImage = new Image();
 playerImage.src = "assets/media/bluels.png";
@@ -173,11 +171,6 @@ function animate(event) {
   requestAnimationFrame(animate);
 }
 
-function updateScore(points) {
-  score += points;
-  // This will need more logic, perhaps when items are built
-}
-
 function boundryCollision() {
   if (spriteX < 0) {
     spriteX = 0;
@@ -193,7 +186,7 @@ function boundryCollision() {
   }
 }
 
-function vaderBoundryCol(){
+function vaderBoundryCol() {
   if (vaderX <= 0) {
     vaderX = 0;
   }
@@ -225,7 +218,6 @@ function ctBoundryCol() {
     ctY = 320;
   }
 }
-
 
 function tfBoundryCol() {
   if (tfX <= 0) {
@@ -269,23 +261,24 @@ function ctMove() {
   ctX += ctSpeedX;
 }
 
-
-function tfMove(){
+function tfMove() {
   if (tfX === 0 || tfX + 100 === 700) {
     tfSpeedX = -tfSpeedX;
   }
-  
+
   tfX += tfSpeedX;
 }
 
-function vaderCollision (){
-  if (spriteX + 100 >= vaderX  &&
-      spriteY + 13 >= vaderY &&
-     spriteX <= vaderX + 50 &&
-     spriteY <= vaderY + 54){
-       vaderX = 400;
-       removeLifeIcon();
-     }
+function vaderCollision() {
+  if (
+    spriteX + 100 >= vaderX &&
+    spriteY + 13 >= vaderY &&
+    spriteX <= vaderX + 50 &&
+    spriteY <= vaderY + 54
+  ) {
+    vaderX = 400;
+    removeLifeIcon();
+  }
 }
 
 function ctCollision() {
@@ -299,70 +292,66 @@ function ctCollision() {
     spriteX = 0;
     points += 10;
     updatePointsDisplay();
-   }
-}
-
-
-function tfCollision (){
-  if (spriteX + 100 >= tfX  &&
-    spriteY + 13 >= tfY &&
-   spriteX <= tfX + 100 &&
-   spriteY <= tfY + 100){
-     spriteX = 0;
-     spriteY = 0;
-
   }
 }
 
-function vaderCtCollision(){
-    if (
-      vaderX + 50 >= ctX &&
-      vaderY + 50 >= ctY &&
-      vaderX <= ctX + 50 &&
-      vaderY <= ctY + 50
-    ) {
-     vaderX = 0;
-     ctX = 400;
-    }
+function tfCollision() {
+  if (
+    spriteX + 100 >= tfX &&
+    spriteY + 13 >= tfY &&
+    spriteX <= tfX + 100 &&
+    spriteY <= tfY + 100
+  ) {
+    spriteX = 0;
+    spriteY = 0;
+  }
 }
 
+function vaderCtCollision() {
+  if (
+    vaderX + 50 >= ctX &&
+    vaderY + 50 >= ctY &&
+    vaderX <= ctX + 50 &&
+    vaderY <= ctY + 50
+  ) {
+    vaderX = 0;
+    ctX = 400;
+  }
+}
 
-function vaderTfCollision(){
+function vaderTfCollision() {
   if (
     vaderX + 50 >= tfX &&
     vaderY + 50 >= tfY &&
     vaderX <= tfX + 50 &&
     vaderY <= tfY + 50
   ) {
-   vaderX = 0;
-   vaderY = 100;
-
+    vaderX = 0;
+    vaderY = 100;
   }
 }
 
-function ctTfCollision(){
+function ctTfCollision() {
   if (
     ctX + 50 >= tfX &&
     ctY + 50 >= tfY &&
     ctX <= tfX + 50 &&
     ctY <= tfY + 50
   ) {
-   ctX = 0;
-   ctY = 100;
-
+    ctX = 0;
+    ctY = 100;
   }
 }
 
-function bfTfCollision(){
+function bfTfCollision() {
   if (
     bfX + 50 >= tfX &&
     bfY + 50 >= tfY &&
     bfX <= tfX + 50 &&
     bfY <= tfY + 50
   ) {
-   bfX = 0;
-   bfY = 100;
-
+    bfX = 0;
+    bfY = 100;
   }
 }
 document.body.addEventListener("keydown", keyDown);
@@ -417,32 +406,29 @@ function keyUp(event) {
   }
 }
 
-// Branch "keiron" -- created score + lives variables with basic functions.
-// You don't have to use any of this code - just thought I'd write some to help out.
-
 function updatePointsDisplay() {
   const pointsDisplay = document.getElementById("pointsCount");
   pointsDisplay.textContent = points;
   if (points >= 50) {
     gameWon();
   }
-};
+}
 
 function createLifeIcons() {
   if (lifeContainer.children.length >= 3) {
-    return; 
-  } 
+    return;
+  }
 
   const iconsToAdd = Math.min(lives, 3 - lifeContainer.children.length);
   for (let i = 0; i < iconsToAdd; i++) {
-    const lifeIcon = document.createElement('div');
-    lifeIcon.classList.add('life-icon');
+    const lifeIcon = document.createElement("div");
+    lifeIcon.classList.add("life-icon");
     lifeContainer.appendChild(lifeIcon);
   }
 }
 
 function removeLifeIcon() {
-  const lifeIcons = lifeContainer.getElementsByClassName('life-icon');
+  const lifeIcons = lifeContainer.getElementsByClassName("life-icon");
   if (lifeIcons.length > 0) {
     lifeContainer.removeChild(lifeIcons[lifeIcons.length - 1]);
   }
@@ -457,23 +443,22 @@ createLifeIcons();
 
 function gameOver() {
   // // Alert/Modal = Game Over
-  gameOverModal.style.display = 'block';
+  gameOverModal.style.display = "block";
   // // Button - Retry = Start
-  restartButtonGameOver.addEventListener('click', restartGame);
+  restartButtonGameOver.addEventListener("click", restartGame);
   // // Stop the sprites from moving anymore
-  ctSpeedX = 0
-  ctSpeedY = 0
-  vaderSpeedX = 0
-  vaderSpeedY = 0
-  tfSpeedX = 0
-  tfSpeedY = 0
-
+  ctSpeedX = 0;
+  ctSpeedY = 0;
+  vaderSpeedX = 0;
+  vaderSpeedY = 0;
+  tfSpeedX = 0;
+  tfSpeedY = 0;
 }
 
 function gameWon() {
-  gameWonModal.style.display = 'block';
-  restartButtonGameWon.addEventListener('click', restartGame);
-};
+  gameWonModal.style.display = "block";
+  restartButtonGameWon.addEventListener("click", restartGame);
+}
 
 function restartGame() {
   // Reset game variables and state
@@ -482,10 +467,6 @@ function restartGame() {
   createLifeIcons();
   resetTimer();
   timer();
-  // The below variables won't update - sprites keep getting faster.
-  // Perhaps Shaun might know how to set them to default?
-  // // Hi! Jacob Here. Here's the things you need to target to change
-  // // the speed on the various enemies
   ctSpeedX = 3;
   ctSpeedY = 3;
   vaderSpeedX = 3;
@@ -493,20 +474,14 @@ function restartGame() {
   tfSpeedX = 3;
   tfSpeedY = 3;
 
-  
-
   // Hide game over modal
   if (gameOverModal) {
-    gameOverModal.style.display = 'none'
-  } if (gameWonModal) {
-    gameWonModal.style.display = 'none'
+    gameOverModal.style.display = "none";
   }
-
-  
-  
+  if (gameWonModal) {
+    gameWonModal.style.display = "none";
+  }
 }
-
-// restartButton.addEventListener('click', restartGame);
 
 // Sound toggle functionality. //
 

@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400;600&display=swap");
 
 /* If not desktop browser */
+
 @media not (pointer: fine) {
   #if-not-desktop {
     display: flex;
@@ -10,7 +11,7 @@
     padding-bottom: 100px;
   }
 
-  #if-not-desktop>p {
+  #if-not-desktop > p {
     color: yellow;
     font-size: 45px;
   }
@@ -40,7 +41,7 @@
     height: 0;
   }
 
-  #if-not-desktop>p {
+  #if-not-desktop > p {
     font-size: 0px;
   }
 }
@@ -49,12 +50,12 @@ body {
   background-image: url("../media/sw_bg_big.png");
   background-size: contain;
   z-index: -1;
-  font-family: 'Noto Sans Display', sans-serif;
+  font-family: "Noto Sans Display", sans-serif;
   overflow: hidden;
 }
 
 p {
-  font-family: 'Noto Sans Display', sans-serif;
+  font-family: "Noto Sans Display", sans-serif;
 }
 
 /* Hide start button and timer for DOM load */
@@ -98,19 +99,6 @@ p {
   background-position: center;
 }
 
-/* .tick-button {
-  padding: 5px, 10px;
-  background-color: #bfa300;
-  border: 2px solid #636363;
-  border-radius: 5px;
-  text-align: center;
-  font-size: 18px;
-  display: inline-block;
-  cursor: pointer;
-  font-family: 'Noto Sans Display', sans-serif;
-} */
-
-
 .start-view {
   position: absolute;
   top: 75%;
@@ -123,14 +111,12 @@ p {
 
 .start-screen {
   background-image: linear-gradient(#bbbbbb, #636363);
-  box-shadow: 1px 0px 0px #e7b43c, 0px 1px 0px #e7b43c,
-    2px 1px 0px #e7b43c, 1px 2px 0px #e7b43c,
-    3px 2px 0px #976f00, 2px 3px 0px #976f00,
-    4px 3px 0px #705200, 3px 4px 0px #705200,
-    5px 4px 0px #705200, 4px 5px 0px #705200,
-    6px 5px 0px #755600, 5px 6px 0px #755600,
-    7px 6px 0px #755600, 6px 7px 0px #755600,
-    8px 7px 0px #463301, 7px 8px 0px #463301;
+  box-shadow: 1px 0px 0px #e7b43c, 0px 1px 0px #e7b43c, 2px 1px 0px #e7b43c,
+    1px 2px 0px #e7b43c, 3px 2px 0px #976f00, 2px 3px 0px #976f00,
+    4px 3px 0px #705200, 3px 4px 0px #705200, 5px 4px 0px #705200,
+    4px 5px 0px #705200, 6px 5px 0px #755600, 5px 6px 0px #755600,
+    7px 6px 0px #755600, 6px 7px 0px #755600, 8px 7px 0px #463301,
+    7px 8px 0px #463301;
   border-radius: 50px;
   padding: 20px;
   font-size: 18px;
@@ -166,20 +152,18 @@ p {
   padding: 20px;
   max-width: 550px;
   margin-left: auto;
-  margin-right:auto;
+  margin-right: auto;
   text-align: center;
 }
 
 .game-over-screen {
   background-image: linear-gradient(#bbbbbb, #636363);
-  box-shadow: 1px 0px 0px #e7b43c, 0px 1px 0px #e7b43c,
-    2px 1px 0px #e7b43c, 1px 2px 0px #e7b43c,
-    3px 2px 0px #976f00, 2px 3px 0px #976f00,
-    4px 3px 0px #705200, 3px 4px 0px #705200,
-    5px 4px 0px #705200, 4px 5px 0px #705200,
-    6px 5px 0px #755600, 5px 6px 0px #755600,
-    7px 6px 0px #755600, 6px 7px 0px #755600,
-    8px 7px 0px #463301, 7px 8px 0px #463301;
+  box-shadow: 1px 0px 0px #e7b43c, 0px 1px 0px #e7b43c, 2px 1px 0px #e7b43c,
+    1px 2px 0px #e7b43c, 3px 2px 0px #976f00, 2px 3px 0px #976f00,
+    4px 3px 0px #705200, 3px 4px 0px #705200, 5px 4px 0px #705200,
+    4px 5px 0px #705200, 6px 5px 0px #755600, 5px 6px 0px #755600,
+    7px 6px 0px #755600, 6px 7px 0px #755600, 8px 7px 0px #463301,
+    7px 8px 0px #463301;
   border-radius: 50px;
   padding: 20px;
   font-size: 18px;
@@ -191,7 +175,7 @@ p {
 }
 
 .restart-button {
- padding: 5px, 10px;
+  padding: 5px, 10px;
   background-color: #bfa300;
   border: 2px solid #636363;
   border-radius: 5px;
@@ -224,7 +208,7 @@ p {
 .life-icon {
   width: 60px;
   height: 42px;
-  background-image: url('../media/grougu_lives_2_55x40.png');
+  background-image: url("../media/grougu_lives_2_55x40.png");
   background-size: cover;
   margin-right: 10px;
 }
@@ -238,7 +222,7 @@ p {
   left: 200px;
   font-size: 40px;
   color: #bfa300;
-  font-family: 'Noto Sans Display', sans-serif;
+  font-family: "Noto Sans Display", sans-serif;
 }
 
 #pointsCount {
@@ -306,7 +290,6 @@ p {
   /* set semi-transparent black color */
 }
 
-
 #game-canvas {
   position: absolute;
   top: 0;
@@ -351,7 +334,7 @@ p {
   cursor: pointer;
   font-size: 36px;
   font-weight: bold;
-  font-family: 'Noto Sans Display', sans-serif;
+  font-family: "Noto Sans Display", sans-serif;
   text-shadow: 1px 1px 2px #f2f2f2;
   background-image: linear-gradient(to bottom, #ddb548, #755600);
 }
@@ -371,7 +354,7 @@ p {
 .digits {
   font-size: 36px;
   font-weight: bold;
-  font-family: 'Noto Sans Display', sans-serif;
+  font-family: "Noto Sans Display", sans-serif;
   text-shadow: 1px 1px 2px #f2f2f2;
 }
 
@@ -392,7 +375,7 @@ footer {
   border-bottom: 15px solid black;
   margin: 0;
   background-color: black;
-  font-family: 'Noto Sans Display', sans-serif;
+  font-family: "Noto Sans Display", sans-serif;
 }
 
 #footer-right {
@@ -405,19 +388,18 @@ footer {
   border-bottom: 15px solid black;
   margin: 0;
   background-color: black;
-  font-family: 'Noto Sans Display', sans-serif;
+  font-family: "Noto Sans Display", sans-serif;
 }
 
-
-footer>ul>li {
+footer > ul > li {
   list-style: none;
   color: yellow;
   padding-left: 5px;
   padding-right: 5px;
-  font-family: 'Noto Sans Display', sans-serif;
+  font-family: "Noto Sans Display", sans-serif;
 }
 
-footer>ul>li>a {
+footer > ul > li > a {
   text-decoration: none;
   color: white;
 }
@@ -441,6 +423,7 @@ footer>ul>li>a {
 }
 
 /* The switch - the box around the slider */
+
 .switch {
   position: relative;
   display: inline-block;
@@ -450,6 +433,7 @@ footer>ul>li>a {
 }
 
 /* Hide default HTML checkbox */
+
 .switch input {
   opacity: 0;
   width: 0;
@@ -457,6 +441,7 @@ footer>ul>li>a {
 }
 
 /* The slider */
+
 .slider {
   position: absolute;
   cursor: pointer;
@@ -465,8 +450,8 @@ footer>ul>li>a {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -477,25 +462,26 @@ footer>ul>li>a {
   left: 4px;
   bottom: 2.5px;
   background-color: #636363;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
-input:checked+.slider {
+input:checked + .slider {
   background-color: yellow;
 }
 
-input:focus+.slider {
+input:focus + .slider {
   box-shadow: 0 0 1px yellow;
 }
 
-input:checked+.slider:before {
+input:checked + .slider:before {
   -webkit-transform: translateX(55px);
   -ms-transform: translateX(55px);
   transform: translateX(55px);
 }
 
 /* Rounded sliders */
+
 .slider.round {
   border-radius: 34px;
 }
