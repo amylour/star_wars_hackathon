@@ -149,8 +149,8 @@ tieFighter.src = "assets/media/tief.png";
 const gameOverModal = document.getElementById("gameOverModal");
 const gameWonModal = document.getElementById("gameWonModal");
 
-const restartButton = document.getElementById("restartButton");
-const restartGameWon = document.getElementById("restartGameWon");
+const restartButtonGameOver = document.getElementById("restartButtonGameOver");
+const restartButtonGameWon = document.getElementById("restartButtonGameWon");
 
 function animate(event) {
   ctx.clearRect(0, 0, canvas_width, canvas_height);
@@ -540,7 +540,7 @@ function gameOver() {
   // // Alert/Modal = Game Over
   gameOverModal.style.display = 'block';
   // // Button - Retry = Start
-  restartButton.addEventListener('click', restartGame);
+  restartButtonGameOver.addEventListener('click', restartGame);
   // // Stop the sprites from moving anymore
   ctSpeedX = 0
   ctSpeedY = 0
@@ -553,7 +553,7 @@ function gameOver() {
 
 function gameWon() {
   gameWonModal.style.display = 'block';
-  restartButton.addEventListener('click', restartGame);
+  restartButtonGameWon.addEventListener('click', restartGame);
 };
 
 function restartGame() {
