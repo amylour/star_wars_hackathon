@@ -1,13 +1,14 @@
 # **Saber Scroll**
 
-![Responsiveness Photo]()
+![landing-page-photo](./documentation/saber%20scroll%20landing%20page%20(2).png)
 
-## **Introduction**
+Wager your Jedi skills with the retro-design game Saber Scroll. Developed by Hackathon Team **Burgundy Lightsaber** during the May 2023 Hackathon.
+
+Live deployment link can be found [here](https://amylour.github.io/star_wars_hackathon/).
 
 # Table of Contents
 
 1. [Project Goals](#project-goals "ProjectGoals")
-   + [User Goals](#user-goals "User Goals")
 2. [User Experience](#user-experience "User Experience")
    + [Target Audience](#target-audience "Target Audience")
    + [User Requirements and Expectations](#user-requirements-and-expectations "User Requirements and Expections")
@@ -31,42 +32,68 @@
 7. [Deployment, Development & Version Control](#deployment-development--version-control)
 8. [Credits](#credits "Credits")
 
+
 ## **Project Goals**
 
-### **User Goals**
+Based on the Code Institute Hackathon May 2023 Theme of "May the 4th be with you", create a Star Wars-themed browser-platform game. The game should be fully functioning with as little bugs as possible, and playable by users of all ages. 
 
-
-<hr>
 
 ## **User Experience**
 
-### **Target Audience**
+This game offers a level-based gaming experience where players can progress with win onto the next leveled adventure in the Star Wars universe. Several things can be expected from the game:
 
-### **User Requirements and Expectations**
+* **Star Wars Pop-Culture references:** Throughout the game, various pop-culture references can be understood by the user if they are a Star Wars fans. The use of lightsabers, clones, Darth Vader helmets as sprites, as well as the beautifully made retro backgrounds are a few examples of these references.
 
-### **User Stories**
+* **Controls:** The user is able to use the arrow keypad to move their lightsaber sprite and make smart, calculated decisions about where to move around the environment.
+
+* **Progressive Challenge:** The player is brought between 3 levels, beginning with level 1, an easier, standard level, then to level 2, more moderate and finally to the 3rd level, which is significantly harder than the previous: thus the user is put under pressure and is challenged to be clever about their strategy.
+
+* **Retro Environment:** Our team specifically chose to develop graphic designs based around a retro-themed environment. All the sprites, backgrounds, items, health containers and general features have been made in an attempt to give a "retro" feel to the application.
+
+* **Immersive Sound:** Retro audio has been caringly added to the gaming environment so match the retro environment and immerse the player into their gaming experience.
+
+
+## **Target Audience**
+
+Our target audience is a range of absolutely any person that can use a computer, thus any user from a young age to senior.
+
+
+## **User Stories**
 
 #### **First time user**
-* As a first-time user, I want to see a landing page that features memorable Star Wars references and sound so that I immediately feel immersed in the Star Wars universe.
-* As a first-time, I want the landing page to be designed to load quickly and smoothly and to include interactive elements so that I can see the website is working to prepare the game for me to enjoy.
-* As a first-time, I want the loading page to smoothly transition into the main menu of the game when it has loaded.
-* As a first-time user, I want to see the rules of the game.
-* As a first time user, I want to be able to control an audit playing.
+
+* As a **first-time user**, I want **to see a landing page that features memorable Star Wars references and sound** so that I **immediately feel immersed in the Star Wars universe**.
+
+* As a **first-time user**, I want **the landing page to be designed to load quickly and smoothly and to include interactive elements** so that I can **see the website is working to prepare the game for me to enjoy**.
+
+* As a **first-time user**, I want **the loading page to smoothly transition into the main menu of the game when it has loaded**.
+
+* As a **first-time user**, I want **to see the rules of the game** so that **I am clear with what I am doing**.
+
+* As a **first-time user**, I want **to be able to control an audit playing** so that I can **be in control of the game**.
 
 #### **Game Play**
-* As a first-time and returning-user, I want to be able to customise my character's lightsaber before starting the game.
-* As a first-time, I want to be able to control my character's movement using the arrow keys and actions using the space-bar.
-* As a first-time, I want to progress through the game accumulating the highest score possible with increasing difficulty so that I feel challenged and engaged.
-* As a first-time, I want to have a set number of lives depicted by Yoda icons, which depreciate each time I make a mistake.
-* As a user, I want to have opportunities to gain rewards during the game play, such as an extra life or bonus points for difficult to complete challenges.
-* As a returning user, I want the game play to have a high level of replayability
-* As a returning user, I want the game to have multiplayer functionalities, such as competing for high scores with an interactive leaderboard or engaging in a local connection.
+
+* As a **first-time and returning-user**, I want **to be able to customise my character's lightsaber before starting the game**.
+
+* As a **first-time**, I want **to be able to control my character's movement using the arrow keys and actions using the space-bar**.
+
+* As a **first-time**, I want **to progress through the game accumulating the highest score possible with increasing difficulty** so that I **feel challenged and engaged**.
+
+* As a **first-time**, I want **to have a set number of lives depicted by Yoda icons, which depreciate each time I make a mistake**.
+
+* As a **user**, I want **to have opportunities to gain rewards during the game play, such as an extra life or bonus points for difficult to complete challenges**.
+
+* As a **returning user**, I want **the game play to have a high level of replayability**.
+
+* As a **returning user**, I want **the game to have multiplayer functionalities, such as competing for high scores with an interactive leaderboard or engaging in a local connection**.
 
 #### **Developer**
-* As a developer, I want the game to be responsive and smooth to users' interactions on multiple devices (mobile and desktop).
-* As a developer, I want to ensure that the game's graphics and sound effects are immersive and engaging
 
-<hr>
+* As a **developer**, I want **the game to be responsive and smooth to users' interactions on multiple devices (mobile and desktop)**.
+
+* As a **developer**, I want **to ensure that the game's graphics and sound effects are immersive and engaging**.
+
 
 ## **Design**
 
