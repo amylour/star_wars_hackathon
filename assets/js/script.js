@@ -100,9 +100,9 @@ const spriteHeight = 523;
 let gameFrame = 0;
 const staggerFrames = 5;
 let spriteX = 0;
-let spriteY = 300;
+let spriteY = 0;
 let vaderX = 400;
-let vaderY = 200;
+let vaderY = 350;
 let vaderWidth = 50;
 let vaderHeight = 54;
 let ctX = 100;
@@ -322,7 +322,7 @@ function vaderCollision (){
       spriteY + 13 >= vaderY &&
      spriteX <= vaderX + 50 &&
      spriteY <= vaderY + 54){
-       vaderX = 0;
+       vaderX = 400;
        removeLifeIcon();
   
           
