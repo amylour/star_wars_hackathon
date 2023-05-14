@@ -188,31 +188,50 @@ Some basic wireframes were created so the team could be on the same page when cr
 
 ## **Features**
 
-This game includes three pages:
- + Start Screen
+This game includes three pages (levels), each with a:
+ + Start Modal
  + Game Screen
- + End Screen
+ + End Modal
+ + Win Modal
 
 ### **Existing Features**
 
-### Start Screen
+### Start Modal
 
-This is the first page that appears on the top of the screen the Saber Scroll image is added and then the welcome message with the rules of this Game. There is a button that enables user to start playing the game.
+This is the first page that appears on the top of the screen. The Saber Scroll image is added and then the welcome message with the rules of this Game (note the rules change for each level). There is a button that enables user to start playing the game.
 
-![The start screen]()
+- Level 1 start modal screen
+![Level 1 start modal screen](readme-assets/start-modal-lv1-fullscreen.png)
+- [Level 2 start modal screen](https://github.com/amylour/star_wars_hackathon/blob/main/readme-assets/start-modal-lv2-fullscreen.png)
+- [Final level start modal screen](https://github.com/amylour/star_wars_hackathon/blob/main/readme-assets/start-modal-final-level-fullscreen.png)
 
 ### Game Screen
 
-When the user wants to play the game using the play button the game screen reveals. On the top of the screen the Saber scroll image is and a timer is added.
-This page also includes footer. On the lift side of the page, copyright and link to GitHub page is added and on the right side the team members with a link to their GitHub pages are added.
+When the user wants to play the game using the play button the game screen reveals. On the top of the screen the Saber Scroll image is present, with a timer on the right and a live counter in the left. UNderneath the game container, there is a on/off button for audio.
+This page also includes footer. On the left side of the page, copyright deatils are present and on the right side, links to developer's GitHub page are added.
 
-![The game screen]()
+- Level 1 game screen
+![Level 1 game screen](readme-assets/level-one-gameplay-fullscreen.png)
+- [Level 2 game screen](https://github.com/amylour/star_wars_hackathon/blob/main/readme-assets/level-two-gameplay-fullscreen.png)
+- [Final level game screen](https://github.com/amylour/star_wars_hackathon/blob/main/readme-assets/final-level-gameplay-fullscreen.png)
 
-### End Screen
+### End Modal
 
-This end screen reveals when the game overs. In this screen a button is added that if the user wanted to play the game again they can start playing again simply by clicking the play again button.
+This end screen reveals when the player has lost all their lives and the game is over. In this screen a button is added that if the user wanted to play the game again they can start playing again simply by clicking the play again button.
 
-![The end screen]()
+- End Modal 
+<br>
+
+![End Modal](readme-assets/game-over-modal.png) 
+
+### Win Modal
+
+This win screen reveals when the game overs. In this screen a button is added and it's functionailty depends on the level. For level one and two, the user can click the button to progress to the next level. For level three the button allows the user to restart the game from the beginning.
+
+- Level 1 win modal screen
+![Win Modal](readme-assets/level-one-win-modal-fullscreen.png)
+- [Level 2 win modal screen](https://github.com/amylour/star_wars_hackathon/blob/main/readme-assets/level-two-win-modal-fullscreen.png)
+- [Final level win modal screen](https://github.com/amylour/star_wars_hackathon/blob/main/readme-assets/final-level-win-modal-fullscreen.png)
 
 <hr>
 
