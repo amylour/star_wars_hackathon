@@ -99,6 +99,11 @@ Our target audience is a range of absolutely any person that can use a computer,
 
 The components of this project were inspired by classic pixel art and were painted in Procreate. The artwork was resized to be appropriate for the size of the game playing area and as to not present too much of a challenge to the player.
 
+A favicon of the game title is used in the browser tab.<br>
+![favicon](assets/media/favicon-32x32.png)<br>
+_Favicon_
+  
+
 ![screenshot of lightsabers](documentation/lightsabers.png)<br>
 _Lightsabers_
   
