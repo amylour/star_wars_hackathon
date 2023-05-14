@@ -75,18 +75,19 @@
     </div>
 
     <!-- Audio Tab -->
-
     <div class="audio-tab">
       <div id="sound-container">
-        <label class="switch">
+        <label class="switch" for="sound-toggle">
           <input type="checkbox" />
           <span id="sound-slider" class="slider round"></span>
         </label>
         <audio
           id="music-player"
-          src="assets/sound/saber-scroll-3.mp3"
+          src="assets/sound/saber-scroll-1.mp3"
           loop
           preload="auto"
+          aria-labelledby="sound-toggle-label"
+          title="retro game music"
         ></audio>
       </div>
       <div class="mute-unmute-container">
