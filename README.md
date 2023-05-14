@@ -260,6 +260,8 @@ The [W3C Markup Validation Service](https://validator.w3.org/) for the HTML code
 
 The [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) for the CSS code was passed in as source code and returned no errors.
 
+![css-validator-results](./documentation/validation_results/CSS%20validator%20results.png)
+
 ### **JSHint**
 
 The [JSHint Validation Service](https://jshint.com/) for the JavaScript code was passed in as source code and returned no errors.
