@@ -109,7 +109,7 @@ window.addEventListener("load", function () {
   let ctY = 300;
   let bfX = 550;
   let bfY = 125;
-  let tfX = 0;
+  let tfX = 360;
   let tfY = 285;
   let speed = 5;
   let vaderSpeedX = 3;
@@ -263,10 +263,10 @@ window.addEventListener("load", function () {
     }
   
     if (tfY <= 0) {
-      bfY = 0;
+      tfY = 0;
     }
     if (tfY >= 320) {
-      bfY = 320;
+      tfY = 320;
     }
   }
   
@@ -310,11 +310,11 @@ window.addEventListener("load", function () {
   }*/
   
   function tfMove(){
-    if (tfX === 0 || tfX + 100 === 700) {
-      tfSpeedX = -tfSpeedX;
-    }
+    if (tfY === 0 || tfY + 80 === 400) {
+        tfSpeedY = -tfSpeedY;
+      }
     
-    tfX += tfSpeedX;
+    tfY += tfSpeedY;
   }
   
   function vaderCollision (){
