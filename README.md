@@ -235,20 +235,6 @@ This win screen reveals when the game overs. In this screen a button is added an
 
 ## **Testing**
 
-### **HTML Validator**
-
-The [W3C Markup Validation Service](https://validator.w3.org/) for the HTML code was passed in as a URL and returned no errors.
-
-![html-validator-results](./documentation/validation_results/HTML%20validation%20results.png)
-
-### **CSS Validator**
-
-The [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) for the CSS code was passed in as source code and returned no errors.
-
-### **JSHint**
-
-The [JSHint Validation Service](https://jshint.com/) for the JavaScript code was passed in as source code and returned no errors.
-
 ## **Bugs**
 
 ### **Fixed bugs**
@@ -264,7 +250,20 @@ To find a list of fixed bugs that were mended during development, please click [
 
 ## **Validator Testing**
 
-<hr>
+### **HTML Validator**
+
+The [W3C Markup Validation Service](https://validator.w3.org/) for the HTML code was passed in as a URL and returned no errors.
+
+![html-validator-results](./documentation/validation_results/HTML%20validation%20results.png)
+
+### **CSS Validator**
+
+The [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) for the CSS code was passed in as source code and returned no errors.
+
+### **JSHint**
+
+The [JSHint Validation Service](https://jshint.com/) for the JavaScript code was passed in as source code and returned no errors.
+
 
 ## **Deployment, Development & Version Control**
 
