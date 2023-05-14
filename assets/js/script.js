@@ -501,7 +501,7 @@ function keyUp(event) {
 function updatePointsDisplay() {
   const pointsDisplay = document.getElementById("pointsCount");
   pointsDisplay.textContent = points;
-  if (points >= 100) {
+  if (points >= 50) {
     gameWon();
   }
 };
