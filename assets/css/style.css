@@ -185,7 +185,7 @@ body {
   margin: 0 auto;
 }
 
-#restartButton {
+.restart-button {
  padding: 5px, 10px;
   background-color: #bfa300;
   border: 2px solid #636363;
