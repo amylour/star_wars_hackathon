@@ -220,7 +220,6 @@ This page also includes footer. On the left side of the page, copyright deatils 
 This end screen reveals when the player has lost all their lives and the game is over. In this screen a button is added that if the user wanted to play the game again they can start playing again simply by clicking the play again button.
 
 - End Modal 
-<br>
 
 ![End Modal](readme-assets/game-over-modal.png) 
 
@@ -233,9 +232,22 @@ This win screen reveals when the game overs. In this screen a button is added an
 - [Level 2 win modal screen](https://github.com/amylour/star_wars_hackathon/blob/main/readme-assets/level-two-win-modal-fullscreen.png)
 - [Final level win modal screen](https://github.com/amylour/star_wars_hackathon/blob/main/readme-assets/final-level-win-modal-fullscreen.png)
 
-<hr>
 
 ## **Testing**
+
+### **HTML Validator**
+
+The [W3C Markup Validation Service](https://validator.w3.org/) for the HTML code was passed in as a URL and returned no errors.
+
+![html-validator-results](./documentation/validation_results/HTML%20validation%20results.png)
+
+### **CSS Validator**
+
+The [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) for the CSS code was passed in as source code and returned no errors.
+
+### **JSHint**
+
+The [JSHint Validation Service](https://jshint.com/) for the JavaScript code was passed in as source code and returned no errors.
 
 ## **Bugs**
 
