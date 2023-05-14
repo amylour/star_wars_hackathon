@@ -98,7 +98,7 @@ p {
   background-position: center;
 }
 
-.tick-button {
+/* .tick-button {
   padding: 5px, 10px;
   background-color: #bfa300;
   border: 2px solid #636363;
@@ -108,7 +108,7 @@ p {
   display: inline-block;
   cursor: pointer;
   font-family: 'Noto Sans Display', sans-serif;
-}
+} */
 
 
 .start-view {
