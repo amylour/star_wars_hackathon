@@ -74,25 +74,26 @@
       <canvas id="game-canvas-2"></canvas>
     </div>
 
-    <!-- Audio Tab -->
-
-    <div class="audio-tab">
-      <div id="sound-container">
-        <label class="switch">
-          <input type="checkbox" />
-          <span id="sound-slider" class="slider round"></span>
-        </label>
-        <audio
-          id="music-player"
-          src="assets/sound/saber-scroll-music.mp3"
-          loop
-          preload="auto"
-        ></audio>
-      </div>
-      <div class="mute-unmute-container">
-        <div class="mute-unmute">Mute/Unmute</div>
-      </div>
-    </div>
+      <!-- Audio Tab -->
+<div class="audio-tab">
+  <div id="sound-container">
+    <label class="switch" for="sound-toggle">
+      <input type="checkbox" />
+      <span id="sound-slider" class="slider round"></span>
+    </label>
+    <audio
+      id="music-player"
+      src="assets/sound/saber-scroll-1.mp3"
+      loop
+      preload="auto"
+      aria-labelledby="sound-toggle-label"
+      title="retro game music"
+    ></audio>
+  </div>
+  <div class="mute-unmute-container">
+    <div class="mute-unmute">Mute/Unmute</div>
+  </div>
+</div>
 
     <!-- Start Button -->
 
