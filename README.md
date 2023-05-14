@@ -66,11 +66,9 @@ Our target audience is a range of absolutely any person that can use a computer,
 
 #### **First time user**
 
-* As a **first-time user**, I want **to see a landing page that features memorable Star Wars references and sound** so that I **immediately feel immersed in the Star Wars universe**.
+* As a **first-time user**, I want **to see a landing page that features memorable Star Wars references** so that I **immediately feel immersed in the Star Wars universe**.
 
 * As a **first-time user**, I want **the landing page to be designed to load quickly and smoothly and to include interactive elements** so that I can **see the website is working to prepare the game for me to enjoy**.
-
-* As a **first-time user**, I want **the loading page to smoothly transition into the main menu of the game when it has loaded**.
 
 * As a **first-time user**, I want **to see the rules of the game** so that **I am clear with what I am doing**.
 
@@ -268,6 +266,78 @@ There are a few features that we would like to add in future to reach some of th
 - More levels! More Art! More Music! More Collectables! More Enemies!
 
 ## **Testing**
+
+### **Manual Testing**
+
+Manual testing following the User Stories was carried out throughout the development of the project, with the final results available below.
+
+* As a **user**, I want **to see a landing page that features memorable Star Wars references** so that I **immediately feel immersed in the Star Wars universe**.
+
+| **Test** | Issue | Result |
+| --- | --- | --- |
+| 1 | User is exposed to Star Wars fonts, colours and artwork upon viewing the landing page | PASS |
+  
+
+* As a **user**, I want **the landing page to be designed to load quickly and smoothly and to include interactive elements** so that I can **see the website is working to prepare the game for me to enjoy**.
+
+| **Test** | Issue | Result |
+| --- | --- | --- |
+| 2 | Start Modal appears onload for user with an interactive 'Play' button | PASS |
+  
+
+* As a **user**, I want **to see the rules of the game** so that **I am clear with what I am doing**.
+
+| **Test** | Issue | Result |
+| --- | --- | --- |
+| 3 | Start modal displays rules and instructions to the user on how to play, component images are used to represent the in game items | PASS |
+  
+
+* As a **user**, I want **to be able to control the audio playing** so that I can **be in control of the game**.
+
+| **Test** | Issue | Result |
+| --- | --- | --- |
+| 4 | The user can control the muting/unmuting of the music using a labelled slider button | PASS |
+  
+
+* As a **user**, I want **to be able to control my character's movement using the arrow keys**.
+
+| **Test** | Issue | Result |
+| --- | --- | --- |
+| 5 | The user can control the movement of the lightsaber using their keyboard arrow keys | PASS |
+  
+
+* As a **user**, I want **to progress through the game accumulating the highest score possible with increasing difficulty** so that I **feel challenged and engaged**.
+
+| **Test** | Issue | Result |
+| --- | --- | --- |
+| 6 | User can identify their time taken and points scored in each level | PASS |
+  
+
+* As a **user**, I want **to have a set number of lives depicted by Yoda icons, which depreciate each time I make a mistake**.
+
+| **Test** | Issue | Result |
+| --- | --- | --- |
+| 7 | Yoda lives icons are clearly displayed for the user with immediate removal of one should they touch Darth Vader or a Tie Fighter | PASS |
+
+
+* As a **user**, I want **the game play to have a high level of replayability**.
+
+| **Test** | Issue | Result |
+| --- | --- | --- |
+| 8 | The user can aim to beat their previous play sessions using the timer for each level and by trying to avoid the 'Try again' modal | PASS |
+  
+
+* As a **developer**, I want **to ensure that the game's graphics and sound effects are immersive and engaging**.
+
+| **Test** | Issue | Result |
+| --- | --- | --- |
+| 9 | The game displays engaging content related to Star Wars | PASS |
+
+
+
+
+
+
 
 ## **Bugs**
 
