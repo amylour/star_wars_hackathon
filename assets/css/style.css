@@ -129,6 +129,11 @@ p {
   margin: 0 auto;
 }
 
+.start-screen-title {
+  height: 180px;
+  width: 400px;
+}
+
 .start-modal-sticker {
   width: 30px;
   height: 30px;
