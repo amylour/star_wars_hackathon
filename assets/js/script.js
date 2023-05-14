@@ -567,22 +567,14 @@ function restartGame() {
   // Perhaps Shaun might know how to set them to default?
   // // Hi! Jacob Here. Here's the things you need to target to change
   // // the speed on the various enemies
-  ctSpeedX = 1
-  ctSpeedY = 1
-  vaderSpeedX = 1
-  vaderSpeedY = 1
-  tfSpeedX = 1
-  tfSpeedY = 1
-  spriteX = 0;
-  spriteY = 100;
-  // vaderX = 300;
-  // vaderY = 200;
-  // ctX = 500;
-  // ctY = 145;
-  // bfX = 550;
-  // bfY = 125;
-  // tfX = 0;
-  // tfY = 285;
+  ctSpeedX = 3;
+  ctSpeedY = 3;
+  vaderSpeedX = 3;
+  vaderSpeedY = 3;
+  tfSpeedX = 3;
+  tfSpeedY = 3;
+
+  
 
   // Hide game over modal
   if (gameOverModal) {
@@ -591,8 +583,8 @@ function restartGame() {
     gameWonModal.style.display = 'none'
   }
 
-  // Start the game again
-  animate();
+  
+  
 }
 
 // restartButton.addEventListener('click', restartGame);
