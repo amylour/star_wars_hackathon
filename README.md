@@ -417,7 +417,7 @@ As mentioned in the Design section, all assets, graphic and audio, were created 
 
 ### **Acknowledgments**
 
-This project was created in collaboration by [Burgundy Lightsaber](https://hackathon.codeinstitute.net/teams/314/): Amy, Chris, Jacob, Jamie, Keiron, Saleha, Shaun
+This project was created in collaboration by [Burgundy Lightsaber](https://hackathon.codeinstitute.net/teams/314/): Amy, Chris, Jacob, Jamie, Keiron, Nathan, Saleha, Shaun
 
 
 
