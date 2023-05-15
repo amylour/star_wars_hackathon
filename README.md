@@ -1,6 +1,6 @@
 # **Saber Scroll**
 
-![landing-page-photo](./documentation/saber%20scroll%20landing%20page%20(2).png)
+![landing-page-photo](./documentation/sw_gameplay.png)
 
 Wager your Jedi skills with the retro-designed game Saber Scroll. Developed by Hackathon Team **Burgundy Lightsaber** during the May 2023 Code Institute Hackathon.
 
@@ -26,6 +26,7 @@ Live deployment link can be found [here](https://amylour.github.io/star_wars_hac
       + [Game Screen](#game-screen "Game Screen")
       + [End Screen](#end-screen "End Screen")
    + [Future Features](#future-features "Future Features")
+   + [Responsiveness](#responsiveness "Responsiveness")
 6. [Testing](#testing "Testing")
    + [Bugs](#bugs "Bugs")
    + [Validator Testing](#validator-testing "Validator Testing") 
@@ -227,7 +228,7 @@ This game includes three pages (levels), each with a:
 This is the first page that appears on the top of the screen. The Saber Scroll image is added and then the welcome message with the rules of this Game (note the rules change for each level). Instructions for the user to play using the keyboard arrows are shown. There is a button that enables a user to start playing the game. 
 
 - Level 1 start modal screen
-![Level 1 start modal screen](readme-assets/start-modal-lv1-fullscreen.png)
+![Level 1 start modal screen](documentation/sw_startmodal_ss.png)
 - [Level 2 start modal screen](https://github.com/amylour/star_wars_hackathon/blob/main/readme-assets/start-modal-lv2-fullscreen.png)
 - [Final level start modal screen](https://github.com/amylour/star_wars_hackathon/blob/main/readme-assets/start-modal-final-level-fullscreen.png)
 
@@ -238,8 +239,8 @@ This page also includes footer. On the left side of the page, copyright deatils 
 
 - Level 1 game screen
 ![Level 1 game screen](readme-assets/level-one-gameplay-fullscreen.png)
-- [Level 2 game screen](https://github.com/amylour/star_wars_hackathon/blob/main/readme-assets/level-two-gameplay-fullscreen.png)
-- [Final level game screen](https://github.com/amylour/star_wars_hackathon/blob/main/readme-assets/final-level-gameplay-fullscreen.png)
+- [Level 2 game screen](https://github.com/amylour/star_wars_hackathon/blob/main/documentation/ss_level2_view.png)
+- [Final level game screen](https://github.com/amylour/star_wars_hackathon/blob/main/documentation/ss_level3_view.png)
 
 ### End Modal
 
@@ -268,6 +269,13 @@ There are a few features that we would like to add in future to reach some of th
 - Lightsaber selection at the begining of the game.
 - A more responsive site as well as touch controls so mobile/tablet users can play the game.
 - More levels! More Art! More Music! More Collectables! More Enemies!
+
+### **Responsiveness**
+
+As this game was physical keyboard-dependent and not yet suitable for playing on tablets and mobile, (this feature will be deployed in the next version of the game), we made sure to leave feedback for the user if they view the game on a device. The feedback can be viewed in the image below.
+
+![keyboard](documentation/sw_keyboard_ss.png)<br>
+_Feedback for user's on mobile/tablet displays_
 
 ## **Testing**
 
