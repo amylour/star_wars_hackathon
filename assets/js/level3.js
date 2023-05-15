@@ -528,7 +528,7 @@ function removeLifeIcon() {
   }
 }
 
-// Call the createLifeIcons() function to initialize the life icons
+// Call the createLifeIcons() function to initialise the life icons
 createLifeIcons();
 
 function gameOver() {
